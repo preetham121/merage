@@ -1,0 +1,136 @@
+*{
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing:border-box;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+}
+
+body{
+    font-family: 'Gabriela', serif;
+}
+
+a{
+    text-decoration:none;
+    text-align: center;
+    color: rgb(206, 201, 201);
+}
+.main{
+display: flex;
+    margin-top: 1%;
+    background-attachment: fixed;
+}
+
+
+
+
+h1{
+    margin-left: auto;
+   margin-top: auto;
+    width: 90%;
+    margin-right:auto;
+    margin-bottom: auto;
+    font-weight: 100;
+    color:rgb(37, 37, 37) ;
+   
+    
+}
+
+
+.logo{
+    margin-bottom: 10px;
+    margin-top: 8px;
+}
+
+.navbar{
+    background-color:rgb(37, 37, 37);
+   
+
+}
+#toggler{
+    margin-top: auto;
+   margin-right:15px;
+    margin-bottom: auto;
+    width: 10%;
+    float: right;
+    margin-left: auto;
+}
+
+
+
+.burger {
+    width: 100%;
+    height: 4px;
+    background-color: rgb(37, 37, 37);
+    margin: 4px;
+    color:rgb(37, 37, 37) ;
+    margin-left: auto;
+
+}
+
+
+ul li {
+    list-style: none;
+  
+    padding-top: 5px;
+    text-align: center;
+    font-size: 20px;
+    
+    padding-bottom:5px ;
+  
+}
+
+.navbar-list{
+    padding-top: 5px;
+}
+
+
+.navbar-item{
+    margin-top: 8px;
+}
+
+.sub-heading{
+ margin-left: 5px;
+ font-size: 20px;
+ color:rgb(37, 37, 37) ;
+
+}
+
+
+
+
+.new-comics{
+    display: flex;
+    
+    -webkit-box-flex: initial;
+    
+    
+    
+}
+.comics{
+max-height: 100%;
+width:31.5%;
+margin-top: 5px;
+
+    margin-left: 5px;
+    
+
+}
+.comics a img{
+    border: solid rgb(216, 204, 204) 1px;
+    
+}
+
+
+
+
+footer{
+    background-color:rgb(155, 155, 155);
+    width: 100%;
+    padding:10px;
+    
+
+}
+
