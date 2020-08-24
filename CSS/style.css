@@ -46,7 +46,14 @@ h1{
    
     
 }
+.navbar{
 
+    background-color:rgb(37, 37, 37);
+    background: url(../pics/3d316ba5a416f68c8627de6be9f97b68.gif)!important;
+   
+   
+
+}
 
 .logo{
     margin-bottom: 10px;
@@ -63,18 +70,21 @@ h1{
     padding-left:8px ;
     margin-left:5px;
     margin-right:50px;
-    border: groove rgba(175, 30, 30, 0.808) 3px;
+    border: groove rgba(175, 30, 30, 0.808) 3px!important;
     border-radius: 20px 2px 20px 2px;
 }
 
-.navbar{
-
-    background-color:rgb(37, 37, 37);
-    background: url(../pics/3d316ba5a416f68c8627de6be9f97b68.gif);
-   
-   
-
+.hole{
+    height: 10px!important;
+    width: 10px!important;
+    background-color: rgb(255, 255, 255)!important;
+    border-radius:100%!important;
+    margin-right:10px!important;
 }
+
+
+
+
 #toggler{
     margin-top: auto;
    margin-right:15px;
@@ -184,13 +194,5 @@ footer{
     padding:10px;
     
 
-}
-
-.hole{
-    height: 10px;
-    width: 10px;
-    background-color: rgb(255, 255, 255);
-    border-radius:100% ;
-    margin-right:10px ;
 }
 
