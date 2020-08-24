@@ -18,6 +18,8 @@ hr{
     
 }
 
+
+
 a{
     text-decoration:none;
     text-align: center;
@@ -128,7 +130,7 @@ margin-right: 160px;
 
 .new-comics{
     display: flex;
-    
+    margin-top: 10px;
     -webkit-box-flex: initial;
     
     
@@ -138,15 +140,35 @@ margin-right: 160px;
 max-height: 100%;
 width:31.5%;
 margin-top: 5px;
-
     margin-left: 5px;
     
-
 }
 .comics a img{
-    border: solid rgb(216, 204, 204) 1px;
+    border: rgb(73, 72, 72) solid 1px;
     
+    border-radius: 5px;
+
 }
+.comics a span {
+    border-top:solid  rgb(73, 72, 72) 2px;
+    font-weight: 500;
+    font-size: 15px;
+    color: rgb(206, 201, 201);
+    display: block;
+    border-radius: 5px;
+    padding: 5px;
+
+} 
+
+.comics a button {
+    border: rgb(73, 72, 72) solid 1px;
+    color: rgb(27, 17, 17);
+    display: block;
+    border-radius: 5px;
+    padding: 5px;
+    background-color:rgb(37, 37, 37);
+} 
+
 
 
 

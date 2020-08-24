@@ -126,29 +126,35 @@ ul li {
 max-height: 100%;
 width:31.5%;
 margin-top: 5px;
-
-    margin-left: 5px;
+ margin-left: 5px;
     
 
 }
 .comics a img{
-    border: solid rgb(216, 204, 204) 1px;
+    border: rgb(73, 72, 72) solid 1px;
     
-}
+    border-radius: 5px;
 
-.section{
-    background-color:rgb(39, 39, 39);
-    color:rgb(206, 201, 201);
-    font-size: 25px;
-    font-weight: 100;
-    padding: 15px;
-    padding-left:8px ;
-    margin-left:5px;
-    margin-right:50px;
-    border: groove rgb(105, 73, 73);
-    border-radius: 20px 2px 20px 2px;
 }
+.comics a span {
+    border-top:solid  rgb(73, 72, 72) 2px;
+    font-weight: 500;
+    font-size: 15px;
+    color: rgb(206, 201, 201);
+    display: block;
+    border-radius: 5px;
+    padding: 5px;
 
+} 
+
+.comics a button {
+    border: rgb(73, 72, 72) solid 1px;
+    color: rgb(27, 17, 17);
+    display: block;
+    border-radius: 5px;
+    padding: 5px;
+    background-color:rgb(37, 37, 37);
+} 
 
 
 footer{
@@ -167,7 +173,7 @@ footer{
 
 .novel-item{
     width: 50%;
-    margin: 1px;
+    margin: 3px;
 }
 
 
@@ -182,7 +188,9 @@ footer{
 padding-bottom:15px ;
 background-color:rgb(37, 37, 37);
    margin-top:1px ;
-   
+   padding: 15px;
+   padding-bottom:10px ;
+    
 
    }
 

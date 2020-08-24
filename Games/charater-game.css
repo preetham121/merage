@@ -131,9 +131,32 @@ margin-top: 5px;
 
 }
 .comics a img{
-    border: solid rgb(216, 204, 204) 1px;
+    border: rgb(73, 72, 72) solid 1px;
     
+    border-radius: 5px;
+
 }
+.comics a span {
+    border-top:solid  rgb(73, 72, 72) 2px;
+    font-weight: 500;
+    font-size: 15px;
+    color: rgb(206, 201, 201);
+    display: block;
+    border-radius: 5px;
+    padding: 5px;
+
+} 
+
+.comics a button {
+    border: rgb(73, 72, 72) solid 1px;
+    color: rgb(27, 17, 17);
+    display: block;
+    border-radius: 5px;
+    padding: 5px;
+    background-color:rgb(37, 37, 37);
+} 
+
+
 .section{
     background-color:rgb(39, 39, 39);
     color:rgb(206, 201, 201);
@@ -165,7 +188,7 @@ footer{
 
 .game-item{
     width: 50%;
-    margin: 1px;
+    margin: 3px;
 }
 
 
@@ -176,10 +199,10 @@ footer{
 .game-item p {
    padding-top: 15px!important;
    font-size: 20px;
-   padding-left: 10px!important;
-padding-bottom:15px ;
 background-color:rgb(37, 37, 37);
    margin-top:1px ;
+  padding: 15px;
+  padding-bottom:10px ;
    
 
    }
