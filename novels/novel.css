@@ -218,7 +218,7 @@ background-color:rgb(37, 37, 37);
     padding-left:8px ;
     margin-left:5px;
     margin-right:50px;
-    border: groove rgb(105, 73, 73);
+    border: groove rgba(175, 30, 30, 0.808) 3px;
     border-radius: 20px 2px 20px 2px;
 }
 
