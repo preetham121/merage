@@ -13,7 +13,7 @@ body{
   
 }
 hr{
-    margin-right:20%;
+    margin-right:42%;
     margin-left: 5px;
     margin-top:0!important;
     background-color:rgb(105, 104, 104) ;
@@ -52,12 +52,13 @@ a{
     color:rgb(206, 201, 201);
     font-size: 25px;
     font-weight: 100;
-    padding: 15px;
-    padding-left:8px ;
+    padding: 10px!important;
+    padding-left:10px!important ;
     margin-left:5px;
     margin-right:50px;
     border: groove rgba(175, 30, 30, 0.808) 3px!important;
     border-radius: 20px 2px 20px 2px;
+    background: linear-gradient(-45deg,rgb(161, 22, 22),rgb(59, 38, 38),rgb(116, 30, 30),rgb(67, 36, 36));
 }
 
 #navbarNav{
@@ -96,19 +97,22 @@ ul li a{
 
 
 
+
 .sub-heading{
+    width: 50%;
  margin-left: 5px;
  margin-bottom: 0;
- font-size: 20px;
+ font-size: 18px;
  font-weight: 100;
  color:rgb(221, 200, 200) ;
- border-radius: 15px 15px 0 0;
+ border-radius: 0px 15px 15px 0px;
  background-color:rgb(83, 61, 61) ;
 margin-right: 160px;
  padding: 10px;
- 
+ background: linear-gradient(30deg,rgb(110, 20, 20),rgb(56, 29, 29),rgb(54, 40, 40),rgb(95, 30, 30));
 
 }
+
 
 
 
