@@ -34,8 +34,9 @@ a{
     margin-left: 15px;
     margin-top:8px ;
     font-size: 35px;
+    font-family: 'Cabin Sketch', cursive;
     font-weight: 100;
-    color: rgb(206, 201, 201);
+    color: rgb(255, 255, 255);
 }
 
 .logo{

@@ -30,12 +30,13 @@ a{
     color: rgb(206, 201, 201);
 }
 .heading{
+    font-family: 'Cabin Sketch', cursive;
     margin: auto;
     margin-left: 15px;
     margin-top:8px ;
     font-size: 35px;
     font-weight: 100;
-    color: rgb(235, 226, 210);
+    color: rgb(255, 255, 255);
 }
 
 .logo{
@@ -133,20 +134,20 @@ footer{
 }
 
  h2{
-   
-    width: 50%;
+    font-family: 'Creepster', cursive;
+    width: 40%;
  height: 5%;
 margin-top: 10px;
-margin-left:10px ;
+margin-left:30px ;
     padding-top: 10px;
-    font-size: 30px;
+    font-size: 40px;
     font-weight: 300;
  margin-right: 0px;
- color: rgb(206, 201, 201);
- background:linear-gradient(10deg,gray,black,black) ;
- padding: 30px;
+ color: rgb(0, 0, 0);
+ background:linear-gradient(10deg,rgb(255, 0, 0),rgb(143, 43, 43),rgb(168, 57, 57),rgb(250, 0, 0)) ;
+ padding: 20px;
  border-radius: 20px 0 20px 0;
-    text-decoration: underline;
+   
 }
 
 .information{
