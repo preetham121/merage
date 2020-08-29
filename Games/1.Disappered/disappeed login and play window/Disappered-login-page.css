@@ -8,18 +8,19 @@
 
 }
 .container-fluid{
+    display: flex;
+    align-items: center;
     margin: 0!important;
     padding: 0;
     height: 100vh;
-    padding-top:0%;
+    
 }
 
-.bg-light{
-    margin-top: 0;
-    display: flex;
-    align-items:center;
-    background: url(./../../../pics/login-background.jpg) no-repeat;
+.bg-dark{
+    
+    background: url(./../../../pics/login-background-2.jpg) no-repeat;
     background-size: 100%;
+    
 }
 
 .container1 {
@@ -47,7 +48,7 @@ button{
 form {
 
     margin: auto;
-    margin-top:35% ;
+    margin-top:25% ;
     margin-bottom: 25%;
 }
 
@@ -88,7 +89,7 @@ form input{
        background:rgba(36, 36, 34, 0.4);
 }
 
-.bg-dark{
+.controls{
     margin-top: 0px;
     background:url(../../../pics/controls.jpg) no-repeat;
     background-size: 100%;
@@ -97,7 +98,6 @@ form input{
 .center{
     margin-left:25%;
     margin-right:25%;
-   padding-top:50%!important;
 }
 
 @keyframes button {
