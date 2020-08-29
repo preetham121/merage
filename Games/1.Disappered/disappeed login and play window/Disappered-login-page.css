@@ -10,28 +10,29 @@
 
 body{
   background-color: black;
+  padding: 0px!important;
 }
 .container-fluid{
     
     display: flex;
     align-items: center!important;
     justify-content: center;
-    margin: auto;
     height: 100vh;
-    
-}
-
-.bg-darker{
-    
+    width: 100%;
     background: url(./../../../pics/login-background-2.jpg) no-repeat;
     background-size: 100%;
+
     
 }
 
+
+
 .container {
+  
     background:rgba(255, 255, 255, .2);
     padding:20px;
   margin: auto;
+  width: 90%;
     animation-name: loginPage;
     animation-duration: 1s;
     animation-fill-mode: forwards!important;
@@ -62,6 +63,9 @@ form input{
      height: 40px;
      
 
+}
+form button{
+    font-size: 18px;
 }
 
 @keyframes loginPage {
@@ -106,7 +110,7 @@ form input{
 .center{
      
     margin: auto;
-    width: 50%;
+    width: 60%;
     
 }
 
