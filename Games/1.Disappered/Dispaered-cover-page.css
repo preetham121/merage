@@ -135,16 +135,16 @@ footer{
 
  h2{
     font-family: 'Creepster', cursive;
-    width: 40%;
+    width:50%;
  height: 5%;
 margin-top: 10px;
 margin-left:30px ;
     padding-top: 10px;
-    font-size: 40px;
-    font-weight: 300;
+    font-size: 35px;
+    font-weight: 200;
  margin-right: 0px;
- color: rgb(0, 0, 0);
- background:linear-gradient(10deg,rgb(255, 0, 0),rgb(143, 43, 43),rgb(168, 57, 57),rgb(250, 0, 0)) ;
+ color: rgb(231, 231, 231);
+ background:linear-gradient(45deg,rgb(39, 39, 39),rgb(61, 24, 24),rgb(148, 0, 0));
  padding: 20px;
  border-radius: 20px 0 20px 0;
    
@@ -168,8 +168,8 @@ margin-left:30px ;
     width: 100%;
     padding: 10px;
     font-size: 18px;
-    background:linear-gradient(rgb(49, 49, 49),rgb(31, 31, 31),black) ;
-    color:rgb(165, 165, 165);
+    background:linear-gradient(-60deg,rgb(0, 0, 0),rgb(39, 1, 1),rgb(66, 0, 0),rgb(66, 0, 0)) ;
+    color:rgb(201, 201, 201);
 }
 .Description h3{
     font-weight: 500;
@@ -195,7 +195,7 @@ margin-top:5px;
 
 
 .Description span {
-    color: gold;
+    color:rgb(6, 215, 252);
 }
  
 .read-back{
@@ -217,8 +217,8 @@ margin-top:5px;
   
     padding: 20px;
     border-radius: 10px;
-  background:linear-gradient(45deg,rgb(49, 49, 49),rgb(24, 20, 20),black) ;
-    color:rgb(165, 165, 165);   
+    background:linear-gradient(-60deg,black,rgb(0, 0, 0),rgb(109, 2, 2),rgb(66, 0, 0),rgb(66, 0, 0)) ;
+    color:rgb(201, 201, 201); 
 }
 
 
