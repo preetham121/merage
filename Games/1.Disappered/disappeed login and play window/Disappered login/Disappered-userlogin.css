@@ -13,9 +13,7 @@ body{
   padding: 0px!important;
 }
 .container-fluid{
-    
-    display: flex;
-    flex-wrap: wrap;
+    display: block;
     align-items: center!important;
     justify-content: center;
     height: 100vh;
@@ -28,6 +26,8 @@ body{
 
 .container {
     position: absolute;
+    top: 23%;
+    left: 5%;
     background:rgba(255, 255, 255, .2);
     padding:20px;
   margin: auto;
@@ -98,8 +98,7 @@ form button{
 }
 
 .controls{
-   
-
+     
     align-items: center!important;
     justify-content: center;
     height: 100vh!important;
@@ -112,7 +111,7 @@ form button{
     
 
     position: absolute;
-     top:25%;
+     top:30%;
      left: 20%;
      right: 25%;
      animation-name: button;
@@ -145,3 +144,5 @@ small{
     font-weight: 700;
 }
 
+.login{
+    display: none;}

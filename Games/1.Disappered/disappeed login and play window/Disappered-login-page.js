@@ -24,12 +24,13 @@ function StorageOfDetails(){
 function check(){
   if (password.value != confirmPassword.value){
   alert("Password do not match.\nRetype the password"); 
-redirect();
+
 
     }
   else if (password.value === confirmPassword.value){
      StorageOfDetails();
      alert("Account setup complete, Press 'OK' to continue"); 
+    
      } 
  };
         
@@ -55,9 +56,17 @@ redirect();
   };
 
 //click event submission
-goBtn.addEventListener("click",validate);
+goBtn.addEventListener("click", validate);
 
 //Redirect
 haveAnAccount.addEventListener("click", redirect);
+
+
+
+
+
+
+
+
 
 
