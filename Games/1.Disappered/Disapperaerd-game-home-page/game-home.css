@@ -1,0 +1,102 @@
+*{
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing:border-box;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+}
+
+body{
+    color: white;
+}
+
+.head-part{
+    height: 13vh;
+    width: 100%;
+    padding-top:2%;
+}
+
+.head-part p {
+    text-align: center;
+    font-size:1.8em ;
+    font-family: 'Oxanium', cursive;
+    margin-bottom: 2px;
+}
+
+.head-part span {
+    display: block;
+    text-align: center;
+    width: 100%;
+    font-size:1em ;
+   
+}
+
+
+.message-part{
+    height: 78vh;
+    margin-bottom: 3px;
+    background-color: rgb(255, 255, 255);
+    border-radius:8px 8px 0px 0px ;
+    
+}
+
+.overflow{
+    height: 100%;
+   overflow: scroll;
+}
+
+hr{
+    margin-left:5%;
+    margin-right: 5%;
+}
+
+.john-talk{
+    padding:5%;
+    padding-bottom:0 ;
+}
+.disFlex{
+    display: flex;
+}
+
+
+.image{
+    margin:1% ;
+    float: left;
+    width:12%;
+    height: 12%;
+} 
+.image img{
+    border-radius: 100%;
+}
+
+.message p {
+   margin:3px ;
+   margin-left:15px ;
+   display: inline;
+}
+
+.NAME{
+    font-weight: 800;
+    font-size: 1.05em;
+}
+
+.text-number{
+    margin-left:auto;
+    margin-top:8%;
+    margin-right: 10px;
+    width: 25px;
+    font-weight: 700;
+    text-align: center;
+    border-radius: 100%;
+    border: solid rgb(122, 122, 122) 1px;
+}
+
+
+
+
+.navigation-part{
+    height: 8vh;
+    background-color: rgb(233, 233, 233);
+}
