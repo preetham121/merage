@@ -66,11 +66,7 @@ body{
     margin-right: 35%;
 
 }
-.oncall{
-    display: block;
-    justify-content: center!important;
-    align-content: center;
-}
+
 .bg-success .phone{
     color: white;
 }
@@ -123,7 +119,8 @@ body{
     display: flex;
     justify-content: center;
     width: 100%;
-    height: 12vh;
+    height: 80px;
+    
   
 }
 
@@ -151,9 +148,9 @@ body{
 .connect{
     display: flex;
     flex-wrap: wrap;
-    height:80vh!important;
+    height:70vh;
     justify-content: center;
-    padding-top:40%;
+    padding-top:38%;
    
 }
 
