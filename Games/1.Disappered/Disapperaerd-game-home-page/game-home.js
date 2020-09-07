@@ -11,3 +11,4 @@ phone.addEventListener("click", () => {
  window.location.replace("./../Disapperaerd-game-phone-page/game-phone.html");
 
 })
+

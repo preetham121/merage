@@ -104,16 +104,29 @@ back.addEventListener("click",()=>{
       hash.addEventListener("click", () =>{
           let numberDisplay = document.querySelector(".display-number");
           numberDisplay.innerHTML = numberDisplay.innerHTML + "#";
+        
       });
     
+ // clear
+       const cross = document.querySelector(".x-mark");
+       cross.addEventListener("click", () =>{
+        let numberDisplay = document.querySelector(".display-number");
+         numberDisplay.innerHTML = "";
+       });
+
+
+
 
 
       
 //calling button
 const dial = document.querySelector(".dial");
 dial.addEventListener("click",() =>{
+    cross.style.display="none";
     let numberDisplay = document.querySelector(".display-number");
     numberDisplay.style.display = "none";
+    let tagOfDisplay = document.querySelector(".ForDisplay");
+    tagOfDisplay.style.display = "none";
      let numbers = document.querySelector(".numbers");
      numbers.style.display = "none";
      let navigation = document.querySelector(".navigation-part");
@@ -122,7 +135,8 @@ dial.addEventListener("click",() =>{
      OnCalling.style.display = "block";
      let content = document.querySelector(".content");
      content.textContent = numberDisplay.innerHTML;
-
+     
+    
 });
 
       
@@ -131,13 +145,15 @@ const End  = document.querySelector(".call");
 End.addEventListener("click",() =>{
     let numberDisplay = document.querySelector(".display-number");
     numberDisplay.style.display = "block";
+    let tagOfDisplay = document.querySelector(".ForDisplay");
+    tagOfDisplay.style.display = "flex";
      let numbers = document.querySelector(".numbers");
-     numbers.style.display = "block";
+     numbers.style.display = "flex";
      let navigation = document.querySelector(".navigation-part");
      navigation.style.display = "block";
      let OnCalling = document.querySelector(".container");
      OnCalling.style.display = "none";
-     let content = document.querySelector(".content");
-     content.textContent = numberDisplay.innerHTML;
+     cross.style.display="block";
+   
 });
 
