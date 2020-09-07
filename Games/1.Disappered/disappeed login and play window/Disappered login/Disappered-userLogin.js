@@ -21,9 +21,16 @@ goLoginBtn.addEventListener("click", () =>{
   
     // Game play Directed to home page of game
 const playBtn = document.querySelector(".play-btn");//play button
-const resetBtn = document.querySelector(".reset-btn");//reset button
 playBtn.addEventListener("click", () =>{
   window.location.replace("../../Disapperaerd-game-home-page/game-home.html");
+})
+const resetBtn = document.querySelector(".reset-btn");//reset button
+
+// on progress
+
+const exitbtn = document.querySelector(".exit-btn");
+exitbtn.addEventListener("click",() => {
+    window.location.replace("./Disappered-userLogin.html");
 })
      
   }
