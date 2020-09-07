@@ -18,9 +18,11 @@ body{
     justify-content: center;
     height: 100vh;
     width: 100%;
-   position: relative;
+   position: absolute;
     padding: 0%;
+  
 }
+
 
 
 
@@ -52,7 +54,7 @@ button{
 form {
 
     margin: auto;
-    margin-top:25% ;
+    margin-top:8% ;
     margin-bottom: 25%;
 }
 
@@ -95,6 +97,16 @@ form button{
        border-width:3px;
        background:rgba(36, 36, 34, 0.4);  
      
+}
+
+.container p {
+     padding: 0;
+     margin: 0;
+     text-align: center;
+     font-weight: 900;
+     font-size: 50px;
+     color: rgb(0, 0, 0);
+     font-family: 'Cabin Sketch', cursive;
 }
 
 .controls{
