@@ -150,7 +150,7 @@ body{
     flex-wrap: wrap;
     height:70vh;
     justify-content: center;
-    padding-top:35%;
+    padding-top:30%;
    
 }
 
@@ -169,6 +169,7 @@ body{
 
 .call{
     height: 60px;
+    margin-top: 0px;
     width: 58px;
     background: red;
     color:rgb(231, 231, 231);
