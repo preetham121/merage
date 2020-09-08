@@ -1,0 +1,183 @@
+*{
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing:border-box;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+}
+
+body{
+    height :100vh;
+}
+
+.head-part{
+    display: flex;
+    height: 13vh;
+    width: 100%;
+    padding-top:2%;
+    padding-right: 15px;
+}
+
+.Profile-img {
+    justify-content: center;
+    width: 50px;
+    height:  50px;
+    position: absolute;
+    right: 32%;
+    top:2%;
+}
+
+.Profile-img img{
+    border-radius: 100%;
+}
+
+.head-part div p {
+    width: 100%;
+    text-align: center;
+    font-size:1.8em ;
+    font-family: 'Oxanium', cursive;
+    margin-bottom: 2px;
+    padding-right: 10px;
+    
+}
+
+
+.head-part span {
+    display: block;
+    text-align: center;
+    width: 100%;
+    font-size:15px!important ;
+    font-family: 'Oxanium', cursive;
+
+   
+}
+.back{
+    text-decoration: none;
+    color:rgb(233, 233, 233);
+    font-size: 2.8em;
+    margin-left: 15px;
+    margin-right: auto;
+    margin-top:15px;
+}
+
+
+.subInfo {
+    color: green;
+    font-weight: 700;
+}
+
+.subInfotoggle{
+    color: red;
+    font-weight: 700;
+}
+
+.container{
+    
+    border-top:solid white 2px;
+    border-radius:20px!important;
+    padding: 10px;
+    color:white;
+    overflow: scroll;
+    height: 80vh;
+    width: 100%;
+}
+.Computer-side{
+    display: flex;
+    float: left;
+    width: 100%;
+    margin-bottom: 15px;
+  
+}
+.Computer-side  img {
+     width: 40px;
+     height: 40px;
+     margin-right: 10px;
+     border-radius:100% ;
+     
+
+}
+.User-side {
+    display: block;
+    width: 100%;
+    float: right;
+    text-align: right;
+    margin-bottom:15px;
+   
+   
+  
+}
+
+.User-side img {
+    width: 40px;
+     height: 40px;
+     margin-left: 10px;
+     border-radius:100% ;
+
+}
+
+
+.text-box{
+    display: inline;
+    padding-top:5px;
+    
+ 
+}
+.text-box-user{
+    display: inline;
+    padding-top:5px;
+  
+}
+
+.Messages{
+    display: none;
+    width: 100%;
+    position: absolute;
+    border-top: solid white;
+    top: auto;
+    bottom:0vh;
+    background: rgb(36, 36, 36);
+    padding: 0;
+    transition:1s;
+
+}
+
+.choose-message{
+    text-align:center;
+    color:rgb(197, 197, 197);
+    padding:8px;
+    padding-bottom: 10px;
+    font-size: 18px;
+    font-family: 'Oxanium', cursive;
+    border-bottom: groove 1px rgb(27, 27, 27);
+}
+
+.cloner{
+    display: flex;
+    width: 100%;
+    height: 7vh;
+    border-top: groove white;
+    padding: 3px;
+}
+.input {
+    width:85%;
+    background: white;
+    border-radius: 10px;
+    padding: 5px;
+    text-align: left;
+}
+.send{
+    width: 15%;
+    color: rgb(218,218,218);
+
+    padding-top:5px;
+   
+    
+}
+.send i {
+   width:100%;
+   font-size: 30px;
+   text-align: center;
+    
+}
