@@ -13,13 +13,13 @@ phone.addEventListener("click", () => {
 });
 
 let textNumber = document.querySelector(".text-number");
-/* function retrive(){ 
+ function retrive(){ 
  let queer = localStorage.getItem("MessageRecent");
  let textMessage = document.querySelector(".text-message");
  textMessage.innerHTML = queer; 
  textNumber.style.display = "none";
 };
- */
+ 
 
    
 let John = document.getElementById("john");
@@ -30,18 +30,10 @@ John.addEventListener("click", ()=>{
 
 })
 
-
-
-function retriveCd(){ 
-    let queer1 = localStorage.getItem("MessageRecentCom");
-    let textMessage = document.querySelector(".text-message");
-    textMessage.innerHTML = queer1; 
-    let ere = localStorage.getItem("numbers");
-  textNumber.textContent = ere;
-     
-   };
-   retriveCd();
-
- 
-
-
+function rece (){
+  
+let naaam = localStorage.getItem("nameOfChar");
+let name = document.querySelector(".Name");
+name = naam;
+}
+rece();

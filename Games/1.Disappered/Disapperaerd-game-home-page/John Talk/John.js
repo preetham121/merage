@@ -1,132 +1,117 @@
-const listAppear = document.querySelector(".cloner");
-let messages = document.querySelector(".Messages");
-let chooseMessage = document.querySelector(".choose-message"); 
-let textInputs = ["Hyy", "Hello"];//UserTEXTS
-let textInputsComputer = ["hello","great"];
-let numbers = ["1","2","3"];
-
-
-for(let i=0 ; i<=1; i++){ 
-  let divContainer = document.querySelector(".container");
-let divComputerSide = document.createElement("div");
-divComputerSide.setAttribute("class", "Computer-side");
-divContainer.appendChild(divComputerSide);
-let ComputerImg = document.createElement("img");
-ComputerImg.setAttribute("src","./../../../../pics/images.png");
-ComputerImg.setAttribute("height", "100%");
-ComputerImg.setAttribute("width", "100%");
-divComputerSide.appendChild(ComputerImg);
-let divTextBox = document.createElement("div");
-divTextBox.setAttribute("class","text-box computer-text");
-divTextBox.textContent = textInputsComputer[i];
-divComputerSide.appendChild(divTextBox);
-divTextBox.setAttribute("id",textInputsComputer[i]); 
-
-/*  let textUsage = document.querySelector(".text-box-user");
-textUsage.classList.remove("text-select");   */
-let textSelectOfComp = document.getElementById(textInputsComputer[i]);
-     textSelectOfComp.classList.add("text-select"); 
-let  texts = document.querySelector(".text-select"); 
-localStorage.setItem("MessageRecentCom",texts.innerHTML);  
-for(let j=0 ;j<=i; j++ ){
-localStorage.setItem("numbers",numbers[j]);
-
-}
-}  
-
-
-
-//creating User side elements
-let CreateUserSide = () =>{
-  let divContainer = document.querySelector(".container");
- let divUserSide = document.createElement("div");
- divUserSide.setAttribute("class", "User-side");
-divContainer.appendChild(divUserSide);
-let divTextBox = document.createElement("div");
-divTextBox.setAttribute("class","text-box-user ");
-divUserSide.appendChild(divTextBox);
-let UserImg = document.createElement("img");
-UserImg.setAttribute("src","./../../../../pics/images.png");
-UserImg.setAttribute("height", "100%");
-UserImg.setAttribute("width", "100%");
-divUserSide.appendChild(UserImg);
-let textSelect = document.querySelector(".computer-text");
-textSelect.classList.remove("text-select"); 
-messages.style.display = "none";
-listAppear.style.display = "flex";
-
-
-};
-
- let cloning = () =>{ 
-chooseMessage.textContent = textInputs[0];
-chooseMessage.setAttribute("id", textInputs[0]);
-let challn = document.getElementById(textInputs[0]);
-  challn.addEventListener("click", ()=>{
-    CreateUserSide();
-    let textBoxUser = document.querySelector(".text-box-user");
-    textBoxUser.innerHTML = textInputs[0];
-   /* let textUser = document.querySelector(".text-box-user");
-    textUser.classList.add("text-select");
-    let  texts = document.querySelector(".text-select"); 
-    localStorage.setItem("MessageRecent",texts.innerHTML);   */
-  });
-  for(let i =1; i<=1; i++){
-    let create =  chooseMessage.cloneNode(true);
-  let pre =  messages.appendChild(create);
-  pre.textContent = textInputs[i];
-  pre.setAttribute("id",textInputs[i]);
-  challn = document.getElementById(textInputs[i]);
-  challn.addEventListener("click", ()=>{
-    CreateUserSide();
-    let textBoxUser = document.querySelector(".text-box-user");
-    textBoxUser.innerHTML = textInputs[i];
-/* textUser = document.querySelector(".text-box-user");
-textUser.classList.add("text-select");
- texts = document.querySelector(".text-select"); 
-localStorage.setItem("MessageRecent",texts.innerHTML);  */
-  });
-
-}
-
- };
-
-
-listAppear.addEventListener("click", () =>{
-    listAppear.style.display = "none";
-     messages.style.display = "block";
-  cloning();
-});
-
-
-
-
-
-
-//creating computer side elements
- let CreateComputerSide = () =>{
-  
-  let divContainer = document.querySelector(".container");
-  let divComputerSide = document.createElement("div");
-  divComputerSide.setAttribute("class", "Computer-side");
- divContainer.appendChild(divComputerSide);
- let ComputerImg = document.createElement("img");
- ComputerImg.setAttribute("src","./../../../../pics/images.png");
- ComputerImg.setAttribute("height", "100%");
- ComputerImg.setAttribute("width", "100%");
- divComputerSide.appendChild(ComputerImg);
- divTextBox.setAttribute("class","text-box computer-text");
- divComputerSide.appendChild(divTextBox);
-};
-
-
-  
-
-
-
-///getting back to homepage of game
- const back = document.querySelector(".back");
+const  container = document.getElementById("contain");
+const back = document.querySelector(".back");
 back.addEventListener("click",()=>{
-    window.location.assign("./../game-home.html");
-});
+    window.location.replace("../game-home.html");
+})
+const  messages = document.querySelector(".Messages");
+const listAppear= document.querySelector(".cloner");
+let  chooseUserText = document.getElementById("choose-message");
+let computerTalks;
+let computerSide  = document.querySelector("Computer-side");
 
+//Arrays
+// Texts
+let computerText = ["Hey!","My name is John. I’m from Rosewood.","good"];
+let UserText = ["Hey!","Do I know you?"];
+let chooseText = ["Hey!","Do I know you?"];
+
+//Id's
+/* let chooseID =  ["o0","o1","o2" ,"o3" ,"o4" ,"o5"];
+let JohnId = ["john0","john1","john3","john4","john5"] */
+
+
+
+
+
+
+
+//Creating functions 
+
+
+/* 
+let UserTextContent = () =>{
+    UserSide = document.createElement("div");
+    UserSide.setAttribute("class", "User-side");
+    container.appendChild(UserSide);
+    UserTalks = document.createElement("div");
+    UserTalks.textContent = "dsfh";
+   UserTalks.setAttribute("class", "text-box-user text-select");
+   UserSide.appendChild(UserTalks);
+    let img = document.createElement("img");
+    img.setAttribute("src","./../../../../pics/images.png");
+    img.setAttribute("width","100%");
+    img.setAttribute("height","100%");
+    UserSide.appendChild(img);
+ 
+}
+ */
+
+
+
+
+
+
+const pName = document.querySelector(".pName");
+const  c0 =  document.getElementById("c0"); 
+const comp0 = document.getElementById("comp0");
+const comp1 = document.getElementById("comp1");
+const o0=document.getElementById("o0");
+const o1 = document.getElementById("o1");
+const u0 = document.getElementById("u0");
+const user0 = document.getElementById("user0");
+const user1 = document.getElementById("user1");
+const i0 = document.getElementById("i0");
+
+if(c0.textContent.trim() === computerText[0].trim()){
+    comp0.style.display = "flex";
+   listAppear.addEventListener("click",()=>{
+       messages.style.display="block";    
+       o0.style.display = "block";
+       o1.style.display = "block";
+})
+
+
+}
+
+if(o0.textContent.trim() === chooseText[0].trim()){
+   o0.addEventListener("click",()=>{
+    user0.style.display = "block";
+    messages.style.display = "none";
+    o0.remove();
+   })
+}
+
+
+if(o1.textContent.trim() === chooseText[1].trim()){
+    o1.addEventListener("click",()=>{
+     user1.style.display = "block";
+     if (u0.textContent === UserText[0]){
+     o0.remove();
+     o1.remove();
+     messages.remove();
+   i0.style.display="flex";
+     setTimeout(()=>{
+       i0.remove();
+        comp1.style.display = "block";
+    
+        const profileImg = document.querySelector(".Profile-img");
+        profileImg.style.right = "32%";
+        pName.textContent = "JOHN";
+
+           
+      
+     },1000 ) 
+    }
+    })
+
+    
+
+ }
+
+
+
+
+ 
+            
+localStorage.setItem("nameOfChar",pName.textContent);
+localStorage.getItem("nameOfChar");

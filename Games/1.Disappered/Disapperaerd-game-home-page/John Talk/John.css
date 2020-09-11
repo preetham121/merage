@@ -25,9 +25,11 @@ body{
     width: 50px;
     height:  50px;
     position: absolute;
-    right: 32%;
+    right: 45%;
     top:2%;
 }
+
+
 
 .Profile-img img{
     border-radius: 100%;
@@ -84,7 +86,7 @@ body{
     width: 100%;
 }
 .Computer-side{
-    display: flex;
+    display: none;
     float: left;
     width: 100%;
     margin-bottom: 15px;
@@ -99,7 +101,7 @@ body{
 
 }
 .User-side {
-    display: block;
+    display: none;
     width: 100%;
     float: right;
     text-align: right;
@@ -144,6 +146,7 @@ body{
 }
 
 .choose-message{
+    display: none;
     text-align:center;
     color:rgb(197, 197, 197);
     padding:8px;
@@ -181,3 +184,8 @@ body{
    text-align: center;
     
 }
+
+#cssComp{
+    display: none;
+}
+
