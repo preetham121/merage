@@ -30,10 +30,5 @@ John.addEventListener("click", ()=>{
 
 })
 
-function rece (){
-  
-let naaam = localStorage.getItem("nameOfChar");
-let name = document.querySelector(".Name");
-name = naam;
-}
-rece();
+let name = document.getElementById("proName");
+name.innerHTML = localStorage.getItem("nameOfChar");

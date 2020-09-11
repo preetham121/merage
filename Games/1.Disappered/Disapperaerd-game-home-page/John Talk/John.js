@@ -51,7 +51,7 @@ let UserTextContent = () =>{
 
 
 
-const pName = document.querySelector(".pName");
+let pName = document.querySelector(".pName");
 const  c0 =  document.getElementById("c0"); 
 const comp0 = document.getElementById("comp0");
 const comp1 = document.getElementById("comp1");
@@ -96,9 +96,11 @@ if(o1.textContent.trim() === chooseText[1].trim()){
     
         const profileImg = document.querySelector(".Profile-img");
         profileImg.style.right = "32%";
+       
         pName.textContent = "JOHN";
+        localStorage.setItem("nameOfChar",pName.innerHTML);
 
-           
+
       
      },1000 ) 
     }
@@ -109,9 +111,4 @@ if(o1.textContent.trim() === chooseText[1].trim()){
  }
 
 
-
-
- 
-            
-localStorage.setItem("nameOfChar",pName.textContent);
-localStorage.getItem("nameOfChar");
+bb.localStorage.remove("bb");
