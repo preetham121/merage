@@ -12,6 +12,79 @@ body{
     height :100vh;
 }
 
+
+
+
+.control{
+    display: none;
+     position: absolute;
+    background:rgba(0,0,0,.2);  
+     color: rgb(255, 255, 255);
+     top: 20%;
+     left:20%;
+     right: 20%;
+     padding:20px;
+    height: 60%;
+    box-shadow: black 2px;
+    animation-name: loginPage;
+    animation-duration: 1s;
+    animation-fill-mode: forwards!important;
+    transition:1.2s;
+   
+}
+
+@keyframes loginPage {
+    0%{
+        transform: translateY(-2000px);
+    }
+    50%{
+        transform: translateY(50px);
+    }
+    100%{
+        transform: translateY(0px);
+    }
+}
+
+span{
+    font-weight: 500;
+    font-size: 20px;
+}
+
+.box{
+    display: flex;
+    border: hidden; 
+     background:rgba(248, 248, 248, 0.3); 
+    border-bottom: 2px groove black ;
+   width: 90%;
+   height: 40px;
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-top:10px;
+
+
+}
+
+.box1{
+    margin-top:30px;
+    margin-bottom: 30px;
+    height: 10px;
+    width: 10%;
+    padding-right:0 ;
+}
+
+button{
+
+    padding: 10px;
+      display: flex;
+     justify-content: center;
+    width: 100%;
+    margin-top: 10px;
+    text-align: center;
+    font-weight: 500;
+    
+ 
+}
+
 .head-part{
     display: flex;
     height: 13vh;
