@@ -7,8 +7,8 @@ const  messages = document.querySelector(".Messages");
 const listAppear= document.querySelector(".cloner");
 let  chooseUserText = document.getElementById("choose-message");
 let computerTalks;
-let computerSide  = document.querySelector("Computer-side");
-
+let computerSide  = document.querySelector(".Computer-side");
+let body  = document.getElementById("body");
 //Arrays
 // Texts
 let computerText = ["Hey!","My name is John. I’m from Rosewood.","good"];
@@ -18,9 +18,6 @@ let chooseText = ["Hey!","Do I know you?"];
 //Id's
 /* let chooseID =  ["o0","o1","o2" ,"o3" ,"o4" ,"o5"];
 let JohnId = ["john0","john1","john3","john4","john5"] */
-
-
-
 
 
 
@@ -49,7 +46,7 @@ let UserTextContent = () =>{
 
 
 
-
+let saved;
 
 let pName = document.querySelector(".pName");
 const  c0 =  document.getElementById("c0"); 
@@ -62,14 +59,15 @@ const user0 = document.getElementById("user0");
 const user1 = document.getElementById("user1");
 const i0 = document.getElementById("i0");
 
+
 if(c0.textContent.trim() === computerText[0].trim()){
     comp0.style.display = "flex";
    listAppear.addEventListener("click",()=>{
        messages.style.display="block";    
        o0.style.display = "block";
        o1.style.display = "block";
-})
-
+    
+    })
 
 }
 
@@ -78,6 +76,8 @@ if(o0.textContent.trim() === chooseText[0].trim()){
     user0.style.display = "block";
     messages.style.display = "none";
     o0.remove();
+   
+
    })
 }
 
@@ -99,16 +99,12 @@ if(o1.textContent.trim() === chooseText[1].trim()){
        
         pName.textContent = "JOHN";
         localStorage.setItem("nameOfChar",pName.innerHTML);
-
-
-      
-     },1000 ) 
+     
+     },1200 ) 
     }
     })
 
     
 
  }
-
-
-bb.localStorage.remove("bb");
+ pName.textContent = localStorage.getItem("nameOfChar");
