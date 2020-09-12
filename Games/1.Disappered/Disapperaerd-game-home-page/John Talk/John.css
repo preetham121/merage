@@ -110,8 +110,23 @@ body{
    
   
 }
+.usersidetext{
+    display: block;
+    width: 100%;
+    float: right;
+    text-align: right;
+    margin-bottom:15px;
+}
 
 .User-side img {
+    width: 40px;
+     height: 40px;
+     margin-left: 10px;
+     border-radius:100% ;
+
+}
+
+.usersidetext img {
     width: 40px;
      height: 40px;
      margin-left: 10px;
