@@ -12,8 +12,10 @@ phone.addEventListener("click", () => {
 
 });
 
-let computerText = ["Hey!","My name is John. I’m from Rosewood."];
-let UserText = ["Hey!","Do I know you?","Hello John!"];
+
+let UserNameSaved = localStorage.getItem("userName");
+let computerText = ["Hey!","My name is John. I’m from Rosewood.",`Are you detective ${UserNameSaved} ?`];
+let UserText = ["Hey!","Do I know you?","Hello John!", `Hello John, My name is ${UserNameSaved}`,"How did you get my number?"];
 
  
 
@@ -43,8 +45,10 @@ let textNumber = document.querySelector(".text-number");
 let message = document.querySelector("#NumberDisplay");
 let savedUser0 = localStorage.getItem("contain0");
 let savedUser1 = localStorage.getItem("contain1");
+let savedUser2 = localStorage.getItem("contain2");
+ let savedUser3 = localStorage.getItem("contain3");
 let savedComp0 = localStorage.getItem("john0");
-
+let savedComp1 = localStorage.getItem("john1");
 
 name.innerHTML = localStorage.getItem("nameOfChar");
 
@@ -62,5 +66,21 @@ name.innerHTML = localStorage.getItem("nameOfChar");
 
  if(savedComp0){
   message.innerHTML = computerText[1];
+  textNumber.style.display = "block";
+ }
+
+ if(savedUser2){
+  message.innerHTML = UserText[2];
+      textNumber.style.display = "none";
+}
+
+if(savedUser3){
+  message.innerHTML = UserText[3];
+      textNumber.style.display = "none";
+}
+
+
+ if(savedComp1){
+  message.innerHTML = computerText[2];
   textNumber.style.display = "block";
  }

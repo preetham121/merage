@@ -25,9 +25,9 @@ let userFemaleSaved = localStorage.getItem("userFemale");
 
 //Arrays
 // Texts
-let computerText = ["Hey!","My name is John. I’m from Rosewood.", `Are you detective ${UserNameSaved}`];
-let UserText = ["Hey!","Do I know you?","Hello John!", `Hello John, My name is ${UserNameSaved}`,"How did you get my number"];
-let chooseText = ["Hey!","Do I know you?","Hello John!" ,`Hello John, My name is ${UserNameSaved}`,"How did you get my number" ];
+let computerText = ["Hey!","My name is John. I’m from Rosewood.", `Are you detective ${UserNameSaved} ?`];
+let UserText = ["Hey!","Do I know you?","Hello John!", `Hello John, My name is ${UserNameSaved}`,"How did you get my number?"];
+let chooseText = ["Hey!","Do I know you?","Hello John!" ,`Hello John, My name is ${UserNameSaved}`,"How did you get my number?" ];
 
 
 
@@ -50,7 +50,7 @@ const o1 = document.getElementById("o1");
 const o2 = document.getElementById("o2");
 const o3 = document.getElementById("o3");
 const o4 = document.getElementById("o4");
-o3.innerHTML = `Hello John, My name is ${UserNameSaved}`;
+o3.innerHTML = `Hello John, My name is ${UserNameSaved} `;
 const u0 = document.getElementById("u0");
 const u1 = document.getElementById("u1");
 const u2 = document.getElementById("u2");
@@ -107,9 +107,6 @@ else{
  control.style.display = "none";
 
 })
-
-
-
 
 
 
@@ -183,7 +180,10 @@ if(o0.textContent.trim() === chooseText[0].trim()){
                 i1.style.display="flex";
                 setTimeout(()=>{
                     i1.remove();
-
+                    o2.remove();
+                    o3.remove();
+                    o5.style.display = "block";
+                    o6.style.display = "block";
                     comp2.style.display = "flex";
                     c2.textContent = computerText[2];
                     localStorage.setItem("john1",john1.innerHTML);
@@ -196,15 +196,17 @@ if(o0.textContent.trim() === chooseText[0].trim()){
 
     if (o3.textContent.trim() === chooseText[3].trim()){
         o3.addEventListener("click",()=>{
-         user3.textContent = UserText[3];
+         u3.textContent = UserText[3];
             user3.style.display = "block";
             localStorage.setItem("contain3",contain3.innerHTML);
             messages.style.display ="none"; 
             if(u3.textContent.trim() === UserText[3].trim()){
                   listAppear.addEventListener("click", ()=>{
                     messages.style.display = "block";
+                    o2.remove();
+                    o3.remove();
                     o4.style.display = "block";
-
+             
                   })
                
             }             
@@ -331,6 +333,7 @@ if(savedUser3){
     o2.remove();
     o3.remove();
     o4.style.display = "block";
+    
 }
 
 
@@ -348,7 +351,7 @@ if(savedUser3){
 
   if (savedComp1){
     john1.innerHTML = savedComp1; 
-
-    
+     o5.style.display = "block";
+     o6.style.display = "block";
 }
 
