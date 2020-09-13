@@ -143,26 +143,12 @@ const user10 = document.getElementById("user10");
 const user11 = document.getElementById("user11");
 const user12 = document.getElementById("user12");
 
-const img0 = document.getElementById("Img0");
-const img1 = document.getElementById("Img1");
-const img2 = document.getElementById("Img2");
-const img3 = document.getElementById("Img3");
-const img4 = document.getElementById("Img4");
-const img5 = document.getElementById("Img5");
-const img6 = document.getElementById("Img6");
-const img7 = document.getElementById("Img7");
-const img8 = document.getElementById("Img8");
-const img9 = document.getElementById("Img9");
-const img10 = document.getElementById("Img10");
-const img11 = document.getElementById("Img11");
-const img12 = document.getElementById("Img12");
-
-
 const i0 = document.getElementById("i0");
 const i1 = document.getElementById("i1");
 const i2 = document.getElementById("i2");
 const i3 = document.getElementById("i3");
 const i4 = document.getElementById("i4");
+
 
 let selection = document.getElementById("popup");
 const male = document.getElementById("Male");
@@ -215,6 +201,10 @@ else{
 
 
 
+   
+
+
+
 
 
 if(c0.textContent.trim() === computerText[0].trim()){
@@ -237,8 +227,12 @@ selection.style.display = "block";
         if ( userMaleSaved){
     control.style.display = "none"; 
     if(o0.textContent.trim() === chooseText[0].trim()){
+        let image = document.createElement("img");
+        image.setAttribute("src","./../../../../pics/usermaleB.jpg");
+        image.setAttribute("width","100%");
+        image.setAttribute("height","100%");
+        user0.appendChild(image);
         o0.addEventListener("click",()=>{   
-            img0.src = "./../../../../pics/usermaleB.jpg";
             user0.style.display = "block";
            localStorage.setItem("contain0",contain0.innerHTML);
              messages.style.display = "none";
@@ -249,9 +243,11 @@ selection.style.display = "block";
      
          
         if(o1.textContent.trim() === chooseText[1].trim()){
+            let image = document.createElement("img");
+            image.setAttribute("src","./../../../../pics/usermaleB.jpg");
+            user1.appendChild(image);
             o1.addEventListener("click",()=>{
              user1.style.display = "block";
-             img1.src = "./../../../../pics/usermaleB.jpg";
              localStorage.setItem("contain1",contain1.innerHTML);
              if (u0.textContent === UserText[0]){
              o0.remove();
@@ -280,8 +276,10 @@ selection.style.display = "block";
          
     
     if(o2.textContent.trim() === chooseText[2].trim()){
+        let image = document.createElement("img");
+        image.setAttribute("src","./../../../../pics/usermaleB.jpg");
+        user2.appendChild(image);
         o2.addEventListener("click",()=>{
-            img2.src = "./../../../../pics/usermaleB.jpg";
             user2.style.display = "block";
             localStorage.setItem("contain2",contain2.innerHTML);
             messages.style.display ="none";
@@ -306,10 +304,12 @@ selection.style.display = "block";
     }
 
     if (o3.textContent.trim() === chooseText[3].trim()){
+        let image = document.createElement("img");
+        image.setAttribute("src","./../../../../pics/usermaleB.jpg");
+        user3.appendChild(image);
         o3.addEventListener("click",()=>{
          u3.textContent = UserText[3];
             user3.style.display = "block";
-            img3.src = "./../../../../pics/usermaleB.jpg";
             localStorage.setItem("contain3",contain3.innerHTML);
             messages.style.display ="none"; 
             if(u3.textContent.trim() === UserText[3].trim()){
@@ -336,10 +336,12 @@ selection.style.display = "block";
 
 
    if (o4.textContent.trim() === chooseText[4].trim()){
+    let image = document.createElement("img");
+    image.setAttribute("src","./../../../../pics/usermaleB.jpg");
+    user4.appendChild(image);
        o4.addEventListener("click",()=>{
            u4.textContent  = UserText[4];
            user4.style.display = "block";
-           img4.src = "./../../../../pics/usermaleB.jpg";
            localStorage.setItem("contain4", contain4.innerHTML);
            messages.style.display = "none";
            if(u4.textContent.trim() === UserText[4].trim()){
@@ -381,9 +383,11 @@ selection.style.display = "block";
 
    if(o5.textContent.trim() ===  chooseText[5].trim()){
        u5.textContent = UserText[5];
+       let image = document.createElement("img");
+       image.setAttribute("src","./../../../../pics/usermaleB.jpg");
+       user5.appendChild(image);
        o5.addEventListener("click",()=>{
            user5.style.display = "block";
-           img5.src = "./../../../../pics/usermaleB.jpg";
            o5.remove();
            o6.remove();
            messages.style.display = "none";
@@ -397,9 +401,12 @@ selection.style.display = "block";
 
    if(o6.textContent.trim() === chooseText[6].trim()){
        u6.textContent = UserText[6];
+       let image = document.createElement("img");
+       image.setAttribute("src","./../../../../pics/usermaleB.jpg");
+       user6.appendChild(image);
+
        o6.addEventListener("click",()=>{
         user6.style.display = "block";
-        img6.src = "./../../../../pics/usermaleB.jpg";
         localStorage.setItem("contain6", contain6.innerHTML);
         messages.style.display = "none";
         if(u6.textContent.trim() === UserText[6].trim()){
@@ -444,11 +451,12 @@ selection.style.display = "block";
 
 
 if(o7.textContent.trim() === chooseText[7].trim()){
-
+    let image = document.createElement("img");
+    image.setAttribute("src","./../../../../pics/usermaleB.jpg");
+    user7.appendChild(image);
     o7.addEventListener("click",()=>{
         u7.textContent  = UserText[7];
         user7.style.display = "block";
-        img7.src = "./../../../../pics/usermaleB.jpg";
         localStorage.setItem("contain7", contain7.innerHTML);
         messages.style.display = "none";
         if(u7.textContent.trim() === UserText[7].trim()){
@@ -472,22 +480,27 @@ if(o7.textContent.trim() === chooseText[7].trim()){
 
 
  if (o8.textContent.trim() === chooseText[8].trim()){
+    let image = document.createElement("img");
        u8.textContent = UserText[8];
+       image.setAttribute("src","./../../../../pics/usermaleB.jpg");
+       user8.appendChild(image);
+
          o8.addEventListener("click",() =>{
               messages.style.display = "none";
               o8.remove();
               o9.style.display = "block";
               user8.style.display = "block";
-              img8.src = "./../../../../pics/usermaleB.jpg";
               localStorage.setItem("contain8",contain8.innerHTML);
          })
  }
 
  if (o9.textContent.trim() === chooseText[9].trim()){
     u9.textContent  = UserText[9];
+    let image = document.createElement("img");
+    image.setAttribute("src","./../../../../pics/usermaleB.jpg");
+    user9.appendChild(image);
        o9.addEventListener("click",()=>{
         user9.style.display = "block";
-        img9.src = "./../../../../pics/usermaleB.jpg";
         localStorage.setItem("contain9",contain9.innerHTML);
         messages.style.display ="none"; 
         o9.remove();
@@ -508,11 +521,13 @@ if(o7.textContent.trim() === chooseText[7].trim()){
 
  if (o10.textContent.trim() === chooseText[10].trim() ){
     u10.textContent = UserText[10];
+    let image = document.createElement("img");
+    image.setAttribute("src","./../../../../pics/usermaleB.jpg");
+    user10.appendChild(image);
      o10.addEventListener("click",()=>{
         o10.remove();
          o11.remove();
       user10.style.display = "block";
-      img10.src = "./../../../../pics/usermaleB.jpg";
         localStorage.setItem("contain10",contain10.innerHTML);
         messages.style.display ="none"; 
         if(u10.textContent.trim() === UserText[10].trim()){
@@ -535,11 +550,13 @@ if(o7.textContent.trim() === chooseText[7].trim()){
 
  if (o11.textContent.trim() === chooseText[11].trim() ){
     u11.textContent = UserText[11];
+    let image = document.createElement("img");
+    image.setAttribute("src","./../../../../pics/usermaleB.jpg");
+    user11.appendChild(image);
      o11.addEventListener("click",()=>{
         o10.remove();
          o11.remove();
       user11.style.display = "block";
-      img11.src = "./../../../../pics/usermaleB.jpg";
         localStorage.setItem("contain11",contain11.innerHTML);
         messages.style.display ="none"; 
         if(u11.textContent.trim() === UserText[11].trim()){
@@ -579,9 +596,11 @@ if(o7.textContent.trim() === chooseText[7].trim()){
 
 
             if(o0.textContent.trim() === chooseText[0].trim()){
+                let image = document.createElement("img");
+                image.setAttribute("src","./../../../../pics/femlae.jpg");
+                user0.appendChild(image);
                 o0.addEventListener("click",()=>{
                     user0.style.display = "block";
-                    img0.src = "./../../../../pics/femlae.jpg";
                    localStorage.setItem("contain0",contain0.innerHTML);
                      messages.style.display = "none";
                     o0.remove();
@@ -589,10 +608,12 @@ if(o7.textContent.trim() === chooseText[7].trim()){
             
             
                  
-                if(o1.textContent.trim() === chooseText[1].trim()){
+                if(o1.textContent.trim() === femaleChooseText[1].trim()){
+                    let image = document.createElement("img");
+                    image.setAttribute("src","./../../../../pics/femlae.jpg");
+                    user1.appendChild(image);
                     o1.addEventListener("click",()=>{
                      user1.style.display = "block";
-                     img1.src = "./../../../../pics/femlae.jpg";
                      localStorage.setItem("contain1",contain1.innerHTML);
                      if (u0.textContent === UserText[0]){
                      o0.remove();
@@ -621,9 +642,11 @@ if(o7.textContent.trim() === chooseText[7].trim()){
                  
             
             if(o2.textContent.trim() === femaleChooseText[2].trim()){
+                let image = document.createElement("img");
+                image.setAttribute("src","./../../../../pics/femlae.jpg");
+                user2.appendChild(image);
                 o2.addEventListener("click",()=>{
                     user2.style.display = "block";
-                    img2.src = "./../../../../pics/femlae.jpg";
                     localStorage.setItem("contain2",contain2.innerHTML);
                     messages.style.display ="none";
                     if(u2.textContent.trim() === femaleUserText[2].trim()){
@@ -649,9 +672,11 @@ if(o7.textContent.trim() === chooseText[7].trim()){
        
        
             if (o3.textContent.trim() === femaleChooseText[3].trim()){
+                let image = document.createElement("img");
+                image.setAttribute("src","./../../../../pics/femlae.jpg");
+                user3.appendChild(image);
                 o3.addEventListener("click",()=>{
                  u3.textContent = femaleUserText[3];
-                 img3.src = "./../../../../pics/femlae.jpg";
                     user3.style.display = "block";
                     localStorage.setItem("contain3",contain3.innerHTML);
                     messages.style.display ="none"; 
@@ -678,10 +703,12 @@ if(o7.textContent.trim() === chooseText[7].trim()){
         
        
                 if (o4.textContent.trim() === femaleChooseText[4].trim()){
+                    let image = document.createElement("img");
+                    image.setAttribute("src","./../../../../pics/femlae.jpg");
+                    user4.appendChild(image);
                     o4.addEventListener("click",()=>{
                         u4.textContent  = femaleUserText[4];
                         user4.style.display = "block";
-                        img4.src = "./../../../../pics/femlae.jpg";
                         localStorage.setItem("contain4", contain4.innerHTML);
                         messages.style.display = "none";
                         if(u4.textContent.trim() === femaleUserText[4].trim()){
@@ -722,10 +749,12 @@ if(o7.textContent.trim() === chooseText[7].trim()){
      
                 
                 if(o5.textContent.trim() ===  femaleChooseText[5].trim()){
+                    let image = document.createElement("img");
+                    image.setAttribute("src","./../../../../pics/femlae.jpg");
+                    user5.appendChild(image);
                     u5.textContent = femaleUserText[5];
                     o5.addEventListener("click",()=>{
                         user5.style.display = "block";
-                        img5.src = "./../../../../pics/femlae.jpg";
                         o5.remove();
                         o6.remove();
                         messages.style.display = "none";
@@ -737,10 +766,12 @@ if(o7.textContent.trim() === chooseText[7].trim()){
                          
 
                 if(o6.textContent.trim() === femaleChooseText[6].trim()){
+                    let image = document.createElement("img");
+                    image.setAttribute("src","./../../../../pics/femlae.jpg");
+                    user6.appendChild(image);
                     u6.textContent = femaleUserText[6];
                     o6.addEventListener("click",()=>{
                      user6.style.display = "block";
-                     img6.src = "./../../../../pics/femlae.jpg";
                      localStorage.setItem("contain6", contain6.innerHTML);
                      messages.style.display = "none";
                      if(u6.textContent.trim() === femaleUserText[6].trim()){
@@ -784,11 +815,12 @@ if(o7.textContent.trim() === chooseText[7].trim()){
              
              
 if(o7.textContent.trim() === femaleChooseText[7].trim()){
-
+    let image = document.createElement("img");
+    image.setAttribute("src","./../../../../pics/femlae.jpg");
+    user7.appendChild(image);
     o7.addEventListener("click",()=>{
         u7.textContent  = femaleUserText[7];
         user7.style.display = "block";
-        img7.src = "./../../../../pics/femlae.jpg";
         localStorage.setItem("contain7", contain7.innerHTML);
         messages.style.display = "none";
         if(u7.textContent.trim() === femaleUserText[7].trim()){
@@ -798,7 +830,7 @@ if(o7.textContent.trim() === femaleChooseText[7].trim()){
              i2.remove();
              /* o5.style.display = "block";
              o6.style.display = "block"; */
-             comp3.style.display = "flex";
+           comp3.style.display = "flex";
              c3.textContent = femaleComputerText[3];
              localStorage.setItem("john2",john2.innerHTML);
 
@@ -806,28 +838,32 @@ if(o7.textContent.trim() === femaleChooseText[7].trim()){
          
    
         }
-    })
-}
-
+    }) 
+ } 
+ 
 
 if (o8.textContent.trim() === femaleChooseText[8].trim()){
+    let image = document.createElement("img");
+    image.setAttribute("src","./../../../../pics/femlae.jpg");
+    user8.appendChild(image);
     u8.textContent = UserText[8];
       o8.addEventListener("click",() =>{
            messages.style.display = "none";
            o8.remove();
            o9.style.display = "block";
            user8.style.display = "block";
-           img8.src = "./../../../../pics/femlae.jpg";
            localStorage.setItem("contain8",contain8.innerHTML);
       })
 }
 
 
 if (o9.textContent.trim() === femaleChooseText[9].trim()){
+    let image = document.createElement("img");
+    image.setAttribute("src","./../../../../pics/femlae.jpg");
+    user9.appendChild(image);
     u9.textContent  = femaleUserText[9];
        o9.addEventListener("click",()=>{
         user9.style.display = "block";
-        img9.src = "./../../../../pics/femlae.jpg";
         localStorage.setItem("contain9",contain9.innerHTML);
         messages.style.display ="none"; 
         o9.remove();
@@ -847,8 +883,10 @@ if (o9.textContent.trim() === femaleChooseText[9].trim()){
 
 
  if (o10.textContent.trim() === femaleChooseText[10].trim() ){
+    let image = document.createElement("img");
+    image.setAttribute("src","./../../../../pics/femlae.jpg");
+    user10.appendChild(image);
     u10.textContent = femaleUserText[10];
-    img10.src = "./../../../../pics/femlae.jpg";
      o10.addEventListener("click",()=>{
         o10.remove();
          o11.remove();
@@ -874,8 +912,10 @@ if (o9.textContent.trim() === femaleChooseText[9].trim()){
 
 
  if (o11.textContent.trim() === femaleChooseText[11].trim() ){
+    let image = document.createElement("img");
+    image.setAttribute("src","./../../../../pics/femlae.jpg");
+    user11.appendChild(image);
     u11.textContent = femaleUserText[11];
-    img11.src = "./../../../../pics/femlae.jpg";
      o11.addEventListener("click",()=>{
         o10.remove();
          o11.remove();
@@ -897,12 +937,12 @@ if (o9.textContent.trim() === femaleChooseText[9].trim()){
  }
 
 
-
+ 
 
 
   
-       
-        } 
+        
+        }  
    
 
 
@@ -925,32 +965,6 @@ if (o9.textContent.trim() === femaleChooseText[9].trim()){
     
 
 
-
-
-
-
-
-      localStorage.setItem("comp",c0.innerHTML);
-    let computr = localStorage.getItem("comp");
-    if(computr){
-        if(userMaleSaved){
-            img0.src = "./../../../../pics/usermaleB.jpg";
-            img1.src = "./../../../../pics/usermaleB.jpg";
-            img2.src = "./../../../../pics/usermaleB.jpg";
-            img3.src = "./../../../../pics/usermaleB.jpg";
-            img4.src = "./../../../../pics/usermaleB.jpg";
-            img5.src = "./../../../../pics/usermaleB.jpg";
-            img6.src = "./../../../../pics/usermaleB.jpg";
-            img7.src = "./../../../../pics/usermaleB.jpg";
-            img8.src = "./../../../../pics/usermaleB.jpg";
-            img9.src = "./../../../../pics/usermaleB.jpg";
-            img10.src = "./../../../../pics/usermaleB.jpg";
-            img11.src = "./../../../../pics/usermaleB.jpg";
-
-       
-
-        }
-    }
 
 
 

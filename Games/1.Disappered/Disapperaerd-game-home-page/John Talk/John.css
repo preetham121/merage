@@ -9,7 +9,7 @@
 }
 
 body{
-    height :100vh;
+    height :100vh!important;
 }
 
 
@@ -155,7 +155,7 @@ button{
     padding: 10px;
     color:white;
     overflow: scroll;
-    height: 80vh;
+    height: 80vh!important;
     width: 100%;
 }
 .Computer-side{
