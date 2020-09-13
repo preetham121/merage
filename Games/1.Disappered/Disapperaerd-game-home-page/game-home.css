@@ -102,7 +102,7 @@ hr{
 
 .text-number{
     margin-left:auto;
-    margin-top:10%;
+    margin-top:8%;
     margin-right: 10px;
     width: 25px;
     height: 25px;
@@ -113,7 +113,10 @@ hr{
 }
 
 
+.text-message{
+    font-weight: 500;
 
+}
 
 .navigation-part{
     height: 8vh;
