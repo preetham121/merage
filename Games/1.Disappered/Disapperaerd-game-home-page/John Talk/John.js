@@ -961,7 +961,12 @@ if (o9.textContent.trim() === femaleChooseText[9].trim()){
  let savedComp4 = localStorage.getItem("john4");
  let savedComp5 = localStorage.getItem("john5");
 
-pName.textContent = localStorage.getItem("nameOfChar");
+let save = localStorage.getItem("nameOfChar");
+
+
+if(save){
+    pName.innerHTML = save;
+   }
 
 //user local 
 

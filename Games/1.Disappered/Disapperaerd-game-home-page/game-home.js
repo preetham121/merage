@@ -22,6 +22,12 @@ John.addEventListener("click", ()=>{
 
 const name = document.getElementById("proName");
 
-name.innerHTML = localStorage.getItem("nameOfChar");
+
+ save = localStorage.getItem("nameOfChar");
 
 
+
+
+ if(save){
+  name.innerHTML = save;
+ }
