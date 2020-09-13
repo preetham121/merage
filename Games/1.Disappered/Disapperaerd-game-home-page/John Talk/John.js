@@ -930,8 +930,27 @@ if (o9.textContent.trim() === femaleChooseText[9].trim()){
 
 
 
+      localStorage.setItem("comp",c0.innerHTML);
+    let computr = localStorage.getItem("comp");
+    if(computr){
+        if(userMaleSaved){
+            img0.src = "./../../../../pics/usermaleB.jpg";
+            img1.src = "./../../../../pics/usermaleB.jpg";
+            img2.src = "./../../../../pics/usermaleB.jpg";
+            img3.src = "./../../../../pics/usermaleB.jpg";
+            img4.src = "./../../../../pics/usermaleB.jpg";
+            img5.src = "./../../../../pics/usermaleB.jpg";
+            img6.src = "./../../../../pics/usermaleB.jpg";
+            img7.src = "./../../../../pics/usermaleB.jpg";
+            img8.src = "./../../../../pics/usermaleB.jpg";
+            img9.src = "./../../../../pics/usermaleB.jpg";
+            img10.src = "./../../../../pics/usermaleB.jpg";
+            img11.src = "./../../../../pics/usermaleB.jpg";
 
+       
 
+        }
+    }
 
 
 
