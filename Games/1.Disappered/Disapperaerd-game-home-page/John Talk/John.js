@@ -38,27 +38,33 @@ let userFemaleSaved = localStorage.getItem("userFemale");
 // Texts
 let femaleComputerText = ["Hey!","My name is John. I’m from Rosewood.", `Are you detective ${UserNameSaved} ?`,"What do you mean by “I was” ?","My friend William gave me your number.",
 "He told me that you are a detective and you are best in your work.","He told that you helped him to find the culprit behind his father’s murder within a day.",
-"Please don’t tell me that ..","  I want your help detective."];
+"Please don’t tell me that ..","  I want your help detective."," Please help me. ","My friend William told me that you are best in your work.",
+" He told that you helped him to find the culprit behind his father’s murder within a day.","He gave me your phone number so that I can contact you.","Yes!"];
 
 let computerText = ["Hey!","My name is John. I’m from Rosewood.", `Are you detective ${UserNameSaved} ?`,"What do you mean by “I was” ?","My friend William gave me your number.",
 "He told me that you are a detective and you are best in your work.", "He told that you helped him to find the culprit behind his father’s murder within a day.",
-"Please don’t tell me that ..","  I want your help detective."];
+"Please don’t tell me that ..","  I want your help detective."," Please help me. ","My friend William told me that you are best in your work.",
+"  He told that you helped him to find the culprit behind his father’s murder within a day.","He gave me your phone number so that I can contact you.","Yes!"];
 
 let femaleUserText =  ["Hey!","Do I know you?","Hello John!", `Hello John, My name is ${UserNameSaved}`,"How did you get my number?","Yes!","How do you know me ?",
 "I mean I was","I remember him but…","If you are here for some kind of case","you must know I don’t do detective things anymore.","then...I’m no help to you.",
-"I quit my job.","Sorry, I’m no help to you.","I cannot help you, consult anyone else","I don’t do detective things anymore."];
+"I quit my job.","Sorry, I’m no help to you.","I cannot help you, consult anyone else","I don’t do detective things anymore.","I quit my job.",
+" So he gave you my number. ","Look I cant do this…"];
 
 let UserText = ["Hey!","Do I know you?","Hello John!", `Hello John, My name is ${UserNameSaved}`,"How did you get my number?","Yes!","How do you know me ?",
 "I mean I was", "I remember him but…","If you are here for some kind of case","you must know I don’t do detective things anymore.","then...I’m no help to you.",
-"I quit my job." ,"Sorry, I’m no help to you.","I cannot help you, consult anyone else","I don’t do detective things anymore."];
+"I quit my job." ,"Sorry, I’m no help to you.","I cannot help you, consult anyone else","I don’t do detective things anymore.","I quit my job.",
+" So he gave you my number. ","Look I cant do this…"];
 
 let chooseText = ["Hey!","Do I know you?","Hello John!" ,`Hello John, My name is ${UserNameSaved}`,"How did you get my number ?","Yes!","How do you know me ?",
 "I mean I was", "I remember him but…","If you are here for some kind of case","you must know I don’t do detective things anymore.","then...I’m no help to you.",
-"I quit my job.","Sorry, I’m no help to you.","I cannot help you, consult anyone else","I don’t do detective things anymore."];
+"I quit my job.","Sorry, I’m no help to you.","I cannot help you, consult anyone else","I don’t do detective things anymore.","I quit my job.",
+" So he gave you my number.","Look I cant do this…"];
 
 let femaleChooseText = ["Hey!","Do I know you?","Hello John!" ,`Hello John, My name is ${UserNameSaved}`,"How did you get my number ?","Yes!","How do you know me ?",
 "I mean I was", "I remember him but…" ,"If you are here for some kind of case","you must know I don’t do detective things anymore.","then...I’m no help to you.",
-"I quit my job.","Sorry, I’m no help to you.","I cannot help you, consult anyone else","I don’t do detective things anymore."];
+"I quit my job.","Sorry, I’m no help to you.","I cannot help you, consult anyone else","I don’t do detective things anymore.","I quit my job.",
+' So he gave you my number.',"Look I cant do this…"];
 
 
 let convo = document.querySelector(".Old-messages");
@@ -76,6 +82,11 @@ const  c5 =  document.getElementById("c5");
 const  c6 =  document.getElementById("c6"); 
 const  c7 =  document.getElementById("c7"); 
 const  c8 =  document.getElementById("c8"); 
+const  c9 =  document.getElementById("c9"); 
+const  c10 =  document.getElementById("c10");
+const  c11 =  document.getElementById("c11");
+const  c12 =  document.getElementById("c12"); 
+const  c13 =  document.getElementById("c13"); 
 
 const comp0 = document.getElementById("comp0");
 const comp1 = document.getElementById("comp1");
@@ -86,6 +97,11 @@ const comp5 = document.getElementById("comp5");
 const comp6 = document.getElementById("comp6");
 const comp7 = document.getElementById("comp7");
 const comp8 = document.getElementById("comp8");
+const comp9 = document.getElementById("comp9");
+const comp10 = document.getElementById("comp10");
+const comp11 = document.getElementById("comp11");
+const comp12 = document.getElementById("comp12");
+const comp13 = document.getElementById("comp13");
 
 const john0 = document.getElementById("john0");
 const john1 = document.getElementById("john1");
@@ -95,6 +111,11 @@ const john4 = document.getElementById("john4");
 const john5 = document.getElementById("john5");
 const john6 = document.getElementById("john6");
 const john7 = document.getElementById("john7");
+const john8 = document.getElementById("john8");
+const john9 = document.getElementById("john9");
+const john10 = document.getElementById("john10");
+const john11 = document.getElementById("john11");
+const john12 = document.getElementById("john12");
 
 const o0=document.getElementById("o0");
 const o1 = document.getElementById("o1");
@@ -113,6 +134,9 @@ const o12= document.getElementById("o12");
 const o13= document.getElementById("o13");
 const o14= document.getElementById("o14");
 const o15= document.getElementById("o15");
+const o16= document.getElementById("o16");
+const o17= document.getElementById("o17");
+const o18= document.getElementById("o18");
 
 const u0 = document.getElementById("u0");
 const u1 = document.getElementById("u1");
@@ -130,6 +154,9 @@ const u12 = document.getElementById("u12");
 const u13 = document.getElementById("u13");
 const u14 = document.getElementById("u14");
 const u15 = document.getElementById("u15");
+const u16 = document.getElementById("u16");
+const u17 = document.getElementById("u17");
+const u18 = document.getElementById("u18");
 
 const contain0 = document.getElementById("contain0");
 const contain1 = document.getElementById("contain1");
@@ -147,6 +174,10 @@ const contain12 = document.getElementById("contain12");
 const contain13 = document.getElementById("contain13");
 const contain14 = document.getElementById("contain14");
 const contain15 = document.getElementById("contain15");
+const contain16 = document.getElementById("contain16");
+const contain17 = document.getElementById("contain17");
+const contain18 = document.getElementById("contain18");
+
 
 const user0 = document.getElementById("user0");
 const user1 = document.getElementById("user1");
@@ -162,8 +193,12 @@ const user10 = document.getElementById("user10");
 const user11 = document.getElementById("user11");
 const user12 = document.getElementById("user12");
 const user13 = document.getElementById("user13");
-const user14 = document.getElementById("user13");
+const user14 = document.getElementById("user14");
 const user15 = document.getElementById("user15");
+const user16 = document.getElementById("user16");
+const user17 = document.getElementById("user17");
+const user18 = document.getElementById("user18");
+
 
 const i0 = document.getElementById("i0");
 const i1 = document.getElementById("i1");
@@ -172,6 +207,12 @@ const i3 = document.getElementById("i3");
 const i4 = document.getElementById("i4");
 const i6 = document.getElementById("i6");
 const i7 = document.getElementById("i7");
+const i8 = document.getElementById("i8");
+const i9 = document.getElementById("i9");
+const i10 = document.getElementById("i10");
+const i11 = document.getElementById("i11");
+const i12 = document.getElementById("i12");
+
 
 
 let selection = document.getElementById("popup");
@@ -384,8 +425,6 @@ selection.style.display = "block";
                o4.remove();
                i2.style.display="flex";
                setTimeout(()=>{
-                let audio = new Audio("../../../../audio/Mouse_Click_-_Free_Sound_Effect(128k).mp3");   
-                audio.play();
                 i2.remove();
                 comp4.style.display = "flex";
                 c4.textContent = computerText[4];
@@ -395,8 +434,7 @@ selection.style.display = "block";
              },1000 ) 
           
              setTimeout(()=>{
-                let audio = new Audio("../../../../audio/Mouse_Click_-_Free_Sound_Effect(128k).mp3");   
-                audio.play() ;
+                
                 convo.style.display = "block";
                comp0.style.display = "none";
                 contain0.style.display = "none";
@@ -412,8 +450,6 @@ selection.style.display = "block";
             },4000)  
 
             setTimeout(()=>{
-                let audio = new Audio("../../../../audio/Mouse_Click_-_Free_Sound_Effect(128k).mp3");   
-                audio.play() ;
                 comp0.style.display = "none";
                 contain0.style.display = "none";
                 contain1.style.display = "none";
@@ -476,8 +512,7 @@ selection.style.display = "block";
             o5.remove();
             i2.style.display="flex";
             setTimeout(()=>{
-                let audio = new Audio("../../../../audio/Mouse_Click_-_Free_Sound_Effect(128k).mp3");   
-                audio.play(); 
+           
              i2.remove();
              comp4.style.display = "flex";
             computerText[4] = "My friend William told me about you."
@@ -488,8 +523,7 @@ selection.style.display = "block";
           },1000 ) 
        
           setTimeout(()=>{
-            let audio = new Audio("../../../../audio/Mouse_Click_-_Free_Sound_Effect(128k).mp3");   
-            audio.play(); 
+     
             convo.style.display = "block";
             comp0.style.display = "none";
             contain0.style.display = "none";
@@ -506,8 +540,7 @@ selection.style.display = "block";
          },4000)  
 
          setTimeout(()=>{
-            let audio = new Audio("../../../../audio/Mouse_Click_-_Free_Sound_Effect(128k).mp3");   
-            audio.play(); 
+           
             contain1.style.display = "none";
             convo.addEventListener("click",()=>{
                 contain1.style.display = "block";
@@ -536,7 +569,6 @@ if(o7.textContent.trim() === chooseText[7].trim()){
     image.setAttribute("height","100%");
     user7.appendChild(image);
     o7.addEventListener("click",()=>{
-
         u7.textContent  = UserText[7];
         user7.style.display = "flex";
         localStorage.setItem("contain7", contain7.innerHTML);
@@ -545,8 +577,6 @@ if(o7.textContent.trim() === chooseText[7].trim()){
             o7.remove();
             i2.style.display="flex";
             setTimeout(()=>{
-                let audio = new Audio("../../../../audio/Mouse_Click_-_Free_Sound_Effect(128k).mp3");   
-                audio.play(); 
                 convo.style.display = "block";
                 comp0.style.display = "none";
                 convo.addEventListener("click",()=>{
@@ -728,15 +758,17 @@ if(o7.textContent.trim() === chooseText[7].trim()){
  }
 
 
- if (o12.textContent.trim() === chooseText[12].trim() ){
-    u12.textContent = UserText[12];
+ 
+ 
+ if (o12.textContent.trim() === femaleChooseText[12].trim() ){
+    u12.textContent = femaleUserText[12];
     let image = document.createElement("img");
     image.setAttribute("src","./../../../../pics/john1.jpg");
     image.setAttribute("width","100%");
     image.setAttribute("height","100%");
     user12.appendChild(image);
      o12.addEventListener("click",()=>{
-  
+       
         john3.style.display = "none";
         john4.style.display = "none";
         convo.addEventListener("click",()=>{
@@ -748,24 +780,17 @@ if(o7.textContent.trim() === chooseText[7].trim()){
       user12.style.display = "flex";
         localStorage.setItem("contain12",contain12.innerHTML);
         messages.style.display ="none"; 
-        if(u12.textContent.trim() === UserText[12].trim()){
+        if(u12.textContent.trim() === femaleUserText[12].trim()){
             o12.remove();
             i6.style.display="flex";
-            c7.textContent = computerText[7];
-            c8.textContent = computerText[8];
+            c7.textContent = femaleComputerText[7];
+            c8.textContent = femaleComputerText[8];
             setTimeout(()=>{
-                let audio = new Audio("../../../../audio/Mouse_Click_-_Free_Sound_Effect(128k).mp3");   
-                audio.play(); 
+             
                 contain1.style.display = "none";
                 john1.style.display = "none";
                 convo.addEventListener("click",()=>{
                     contain1.style.display = "block";
-                    john1.style.display = "block";
-                    
-                })
-                john1.style.display = "none";
-                convo.addEventListener("click",()=>{
-                
                     john1.style.display = "block";
                     
                 })
@@ -777,11 +802,10 @@ if(o7.textContent.trim() === chooseText[7].trim()){
           },1000 ) 
 
           setTimeout(()=>{
-            let audio = new Audio("../../../../audio/Mouse_Click_-_Free_Sound_Effect(128k).mp3");   
-            audio.play(); 
-           john0.style.display = "none";
-           convo.addEventListener("click",()=>{
-               john0.style.display = "block";
+         
+            john0.style.display = "none";
+            convo.addEventListener("click",()=>{
+            john0.style.display = "block";
            })
             i7.remove();
             o13.style.display = "block";
@@ -805,7 +829,6 @@ if(o7.textContent.trim() === chooseText[7].trim()){
  }
 
 
-
  if (o15.textContent.trim() === chooseText[15].trim() ){
     u15.textContent = UserText[15];
     let image = document.createElement("img");
@@ -814,7 +837,6 @@ if(o7.textContent.trim() === chooseText[7].trim()){
     image.setAttribute("height","100%");
     user15.appendChild(image);
      o15.addEventListener("click",()=>{
-
       john3.style.display = "none";
         john4.style.display = "none"; 
        convo.addEventListener("click",()=>{
@@ -834,7 +856,7 @@ if(o7.textContent.trim() === chooseText[7].trim()){
             listAppear.addEventListener("click", ()=>{
                 messages.style.display = "block";
                 o15.remove();
-                o12.style.display = "block";
+                o16.style.display = "block";
               })
      
         }
@@ -852,20 +874,203 @@ if(o7.textContent.trim() === chooseText[7].trim()){
 
 
 
+if(o16.textContent.trim() === chooseText[16].trim() ){
+    u16.textContent = UserText[16];
+    let image = document.createElement("img");
+    image.setAttribute("src","./../../../../pics/john1.jpg");
+    image.setAttribute("width","100%");
+    image.setAttribute("height","100%");
+    user16.appendChild(image);
+    o16.addEventListener("click",()=>{
+        contain1.style.display = "none";
+        convo.addEventListener("click",()=>{
+            contain1.style.display = "block";
+        })
+        o16.remove();
+        user16.style.display = "flex";
+        localStorage.setItem("contain16",contain16.innerHTML);
+        messages.style.display ="none";
+
+        if(u16.textContent.trim() === UserText[16].trim()){
+              messages.style.display = "block";
+              o16.remove();
+              i6.style.display="flex";
+            c7.textContent = femaleComputerText[7];
+            c8.textContent = femaleComputerText[8];
+            c9.textContent = computerText[9];
+            c10.textContent = computerText[10];
+            c11.textContent = computerText[11];
+            c12.textContent = computerText[12];
+            setTimeout(()=>{
+             
+                contain1.style.display = "none";
+                john1.style.display = "none";
+                convo.addEventListener("click",()=>{
+                    contain1.style.display = "block";
+                    john1.style.display = "block";
+                    
+                })
+             i6.remove();
+             comp7.style.display = "flex";
+             localStorage.setItem("john6",john6.innerHTML);
+             setTimeout(()=>{i7.style.display = "flex";},1000)
+
+          },1000 ) 
+
+          setTimeout(()=>{
+         
+            john0.style.display = "none";
+            contain2.style.display = "none";
+            convo.addEventListener("click",()=>{
+            john0.style.display = "block";
+            contain2.style.display = "none";
+           })
+            i7.remove();
+            comp8.style.display = "flex";
+            localStorage.setItem("john7",john7.innerHTML);
+            setTimeout(()=>{i8.style.display = "flex";},1000)
+        },4000)  
+            
+        setTimeout(()=>{
+         
+            contain5.style.display = "none";
+            convo.addEventListener("click",()=>{
+            contain5.style.display = "block";
+           })
+            i8.remove();
+            comp9.style.display = "flex";
+            localStorage.setItem("john8",john8.innerHTML);
+            setTimeout(()=>{i9.style.display = "flex";},1000)
+        },6000)  
+
+        setTimeout(()=>{
+         
+            contain7.style.display = "none";
+            convo.addEventListener("click",()=>{
+            contain7.style.display = "block";
+           })
+            i9.remove();
+            comp10.style.display = "flex";
+            localStorage.setItem("john9",john9.innerHTML);
+            setTimeout(()=>{i10.style.display = "flex";},1000)
+        },8000)   
+
+        setTimeout(()=>{
+         
+            contain3.style.display = "none";
+            john2.style.display = "none";
+            convo.addEventListener("click",()=>{
+            contain3.style.display = "block";
+            john2.style.display = "block";
+           })
+            i10.remove();
+            comp11.style.display = "flex";
+            localStorage.setItem("john10",john10.innerHTML);
+            setTimeout(()=>{i11.style.display = "flex";},1000)
+        },12000)   
+
+        setTimeout(()=>{
+         
+            contain15.style.display = "none";
+            convo.addEventListener("click",()=>{
+            contain15.style.display = "block";
+           })
+            i11.remove();
+            o17.style.display = "block";
+            comp12.style.display = "flex";
+            localStorage.setItem("john11",john11.innerHTML);
+
+        },15000)  
+
+         
+      }   
+
+    
+    })
+}
+ 
+if(o17.textContent.trim() === chooseText[17].trim()){
+ 
+     let image = document.createElement("img");
+    image.setAttribute("src","./../../../../pics/john1.jpg");
+    image.setAttribute("width","100%");
+    image.setAttribute("height","100%");
+    user17.appendChild(image);
+    u17.textContent  = UserText[17];
+    o17.addEventListener("click",()=>{
+      contain16.style.display = "none";
+        convo.addEventListener("click",()=>{
+            contain16.style.display = "block";
+        })
+        user17.style.display = "flex";
+        localStorage.setItem("contain17", contain17.innerHTML);
+        messages.style.display = "none";
+        if(u17.textContent.trim() === UserText[17].trim()){
+            o17.remove();
+            i12.style.display="flex";
+            setTimeout(()=>{
+
+                john0.style.display = "none";
+                convo.addEventListener("click",()=>{
+                    john0.style.display = "block";
+                })
+             i12.remove();
+             o18.textContent = chooseText[18];
+             o18.style.display = "block"; 
+             comp13.style.display = "flex";
+             c13.textContent = computerText[13];
+             localStorage.setItem("john12",john12.innerHTML);
+
+          },1000 ) 
 
 
 
-
+        } 
+}) 
 
 
 
     }
-    
-
-    
 
 
+
+if(o18.textContent.trim() === chooseText[18].trim()){
+    console.log("dfg")
+           u18.textContent = UserText[18];
+
+          let image = document.createElement("img");
+          image.setAttribute("src","./../../../../pics/john1.jpg");
+          image.setAttribute("width","100%");
+          image.setAttribute("height","100%");
+          user18.appendChild(image);
+          o18.addEventListener("click",()=>{
+              o18.remove();
+            user18.style.display = "flex";
+            messages.style.display = "none";
+            john7.style.display = "none";
+            convo.addEventListener("click",()=>{
+                john7.style.display = "block";
+            })
+            localStorage.setItem("contain18", contain18.innerHTML);
+            if(u18.textContent.trim() === UserText[18].trim()){
+                listAppear.addEventListener("click",()=>{
+                    o13.style.display = "block";
+                    o14.style.display = "block";
+                })
+            }
+
+          }) 
+}
+
+
+
+
+
+
+ 
     
+}
+
 
       
           if (userFemaleSaved){
@@ -903,8 +1108,7 @@ if(o7.textContent.trim() === chooseText[7].trim()){
                      messages.remove();
                    i0.style.display="flex";
                      setTimeout(()=>{
-                        let audio = new Audio("../../../../audio/Mouse_Click_-_Free_Sound_Effect(128k).mp3");   
-                        audio.play(); 
+                       
                        i0.remove();
                         comp1.style.display = "flex";
                         c1.textContent = computerText[1];
@@ -1006,8 +1210,6 @@ if(o7.textContent.trim() === chooseText[7].trim()){
                             o4.remove();
                             i2.style.display="flex";
                             setTimeout(()=>{
-                                let audio = new Audio("../../../../audio/Mouse_Click_-_Free_Sound_Effect(128k).mp3");   
-                                audio.play(); 
                              i2.remove();
                              comp4.style.display = "flex";
                              c4.textContent = femaleComputerText[4];
@@ -1017,8 +1219,7 @@ if(o7.textContent.trim() === chooseText[7].trim()){
                           },1000 ) 
                        
                           setTimeout(()=>{
-                            let audio = new Audio("../../../../audio/Mouse_Click_-_Free_Sound_Effect(128k).mp3");   
-                            audio.play(); 
+                          
                             convo.style.display = "block";
                             comp0.style.display = "none";
                             contain0.style.display = "none";
@@ -1034,8 +1235,7 @@ if(o7.textContent.trim() === chooseText[7].trim()){
                          },4000)  
              
                          setTimeout(()=>{
-                            let audio = new Audio("../../../../audio/Mouse_Click_-_Free_Sound_Effect(128k).mp3");   
-                            audio.play(); 
+                        
                             comp0.style.display = "none";
                             contain0.style.display = "none";
                             contain1.style.display = "none";
@@ -1095,8 +1295,7 @@ if(o7.textContent.trim() === chooseText[7].trim()){
                          o5.remove();
                          i2.style.display="flex";
                          setTimeout(()=>{
-                            let audio = new Audio("../../../../audio/Mouse_Click_-_Free_Sound_Effect(128k).mp3");   
-                            audio.play(); 
+                            
                           i2.remove();
                           femaleComputerText[4] = "My friend William told me about you." ;
                           comp4.style.display = "flex";
@@ -1107,8 +1306,7 @@ if(o7.textContent.trim() === chooseText[7].trim()){
                        },1000 ) 
                     
                        setTimeout(()=>{
-                        let audio = new Audio("../../../../audio/Mouse_Click_-_Free_Sound_Effect(128k).mp3");   
-                        audio.play(); 
+                      
                         convo.style.display = "block";
                         comp0.style.display = "none";
                         contain0.style.display = "none";
@@ -1125,8 +1323,7 @@ if(o7.textContent.trim() === chooseText[7].trim()){
                       },4000)  
              
                       setTimeout(()=>{
-                        let audio = new Audio("../../../../audio/Mouse_Click_-_Free_Sound_Effect(128k).mp3");   
-                        audio.play(); 
+                       
                         contain1.style.display = "none";
                         convo.addEventListener("click",()=>{
                             contain1.style.display = "block";
@@ -1367,8 +1564,7 @@ if (o9.textContent.trim() === femaleChooseText[9].trim()){
             c7.textContent = femaleComputerText[7];
             c8.textContent = femaleComputerText[8];
             setTimeout(()=>{
-                let audio = new Audio("../../../../audio/Mouse_Click_-_Free_Sound_Effect(128k).mp3");   
-                audio.play(); 
+
                 contain1.style.display = "none";
                 john1.style.display = "none";
                 convo.addEventListener("click",()=>{
@@ -1384,8 +1580,7 @@ if (o9.textContent.trim() === femaleChooseText[9].trim()){
           },1000 ) 
 
           setTimeout(()=>{
-            let audio = new Audio("../../../../audio/Mouse_Click_-_Free_Sound_Effect(128k).mp3");   
-            audio.play(); 
+         
             john0.style.display = "none";
             convo.addEventListener("click",()=>{
             john0.style.display = "block";
@@ -1439,7 +1634,7 @@ if (o9.textContent.trim() === femaleChooseText[9].trim()){
             listAppear.addEventListener("click", ()=>{
                 messages.style.display = "block";
                 o15.remove();
-                o12.style.display = "block";
+                o16.style.display = "block";
               })
      
         }
@@ -1456,8 +1651,207 @@ if (o9.textContent.trim() === femaleChooseText[9].trim()){
 
 
 
+
+ if(o16.textContent.trim() === femaleChooseText[16] ){
+    u16.textContent = UserText[16];
+    let image = document.createElement("img");
+    image.setAttribute("src","./../../../../pics/femlae.jpg");
+    image.setAttribute("width","100%");
+    image.setAttribute("height","100%");
+    user16.appendChild(image);
+    o16.addEventListener("click",()=>{
+        contain1.style.display = "none";
+        convo.addEventListener("click",()=>{
+            contain1.style.display = "block";
+        })
+        o16.remove();
+        user16.style.display = "flex";
+        localStorage.setItem("contain16",contain16.innerHTML);
+        messages.style.display ="none";
+
+        if(u16.textContent.trim() === UserText[16].trim()){
+              messages.style.display = "block";
+              o16.remove();
+              i6.style.display="flex";
+            c7.textContent = femaleComputerText[7];
+            c8.textContent = femaleComputerText[8];
+            c9.textContent = computerText[9];
+            c10.textContent = computerText[10];
+            c11.textContent = computerText[11];
+            c12.textContent = computerText[12];
+            setTimeout(()=>{
+             
+                contain1.style.display = "none";
+                john1.style.display = "none";
+                convo.addEventListener("click",()=>{
+                    contain1.style.display = "block";
+                    john1.style.display = "block";
+                    
+                })
+             i6.remove();
+             comp7.style.display = "flex";
+             localStorage.setItem("john6",john6.innerHTML);
+             setTimeout(()=>{i7.style.display = "flex";},1000)
+
+          },1000 ) 
+
+          setTimeout(()=>{
+         
+            john0.style.display = "none";
+            contain2.style.display = "none";
+            convo.addEventListener("click",()=>{
+            john0.style.display = "block";
+            contain2.style.display = "none";
+           })
+            i7.remove();
+            comp8.style.display = "flex";
+            localStorage.setItem("john7",john7.innerHTML);
+            setTimeout(()=>{i8.style.display = "flex";},1000)
+        },4000)  
+            
+        setTimeout(()=>{
+         
+            contain5.style.display = "none";
+            convo.addEventListener("click",()=>{
+            contain5.style.display = "block";
+           })
+            i8.remove();
+            comp9.style.display = "flex";
+            localStorage.setItem("john8",john8.innerHTML);
+            setTimeout(()=>{i9.style.display = "flex";},1000)
+        },6000)  
+
+        setTimeout(()=>{
+         
+            contain7.style.display = "none";
+            convo.addEventListener("click",()=>{
+            contain7.style.display = "block";
+           })
+            i9.remove();
+            comp10.style.display = "flex";
+            localStorage.setItem("john9",john9.innerHTML);
+            setTimeout(()=>{i10.style.display = "flex";},1000)
+        },8000)   
+
+        setTimeout(()=>{
+         
+            contain3.style.display = "none";
+            john2.style.display = "none";
+            convo.addEventListener("click",()=>{
+            contain3.style.display = "block";
+            john2.style.display = "block";
+           })
+            i10.remove();
+            comp11.style.display = "flex";
+            localStorage.setItem("john10",john10.innerHTML);
+            setTimeout(()=>{i11.style.display = "flex";},1000)
+        },12000)   
+
+        setTimeout(()=>{
+         
+            contain15.style.display = "none";
+            convo.addEventListener("click",()=>{
+            contain15.style.display = "block";
+           })
+            i11.remove();
+            o17.style.display = "block";
+            comp12.style.display = "flex";
+            localStorage.setItem("john11",john11.innerHTML);
+
+        },15000)  
+
+         
+      }   
+
+    
+    })
+}
+
+
+if(o17.textContent.trim() === chooseText[17].trim()){
+ 
+    let image = document.createElement("img");
+   image.setAttribute("src","./../../../../pics/femlae.jpg");
+   image.setAttribute("width","100%");
+   image.setAttribute("height","100%");
+   user17.appendChild(image);
+   u17.textContent  = UserText[17];
+   o17.addEventListener("click",()=>{
+     contain16.style.display = "none";
+       convo.addEventListener("click",()=>{
+           contain16.style.display = "flex";
+       })
+       user17.style.display = "flex";
+       localStorage.setItem("contain17", contain17.innerHTML);
+       messages.style.display = "none";
+       if(u17.textContent.trim() === UserText[17].trim()){
+           o17.remove();
+           i12.style.display="flex";
+           setTimeout(()=>{
+               john0.style.display = "none";
+               convo.addEventListener("click",()=>{
+                   john0.style.display = "block";
+               })
+            i12.remove();
+            o18.style.display = "block"; 
+            comp13.style.display = "flex";
+            c13.textContent = computerText[13];
+            localStorage.setItem("john12",john12.innerHTML);
+
+         },1000 ) 
+
+
+
+       } 
+}) 
+
+
+
+   }
+    
+
+
+   if(o18.textContent.trim() === chooseText[18].trim()){
+   
+           u18.textContent = UserText[18];
+
+          let image = document.createElement("img");
+          image.setAttribute("src","./../../../../pics/femlae.jpg");
+          image.setAttribute("width","100%");
+          image.setAttribute("height","100%");
+          user18.appendChild(image);
+          o18.addEventListener("click",()=>{
+              o18.remove();
+            user18.style.display = "flex";
+            messages.style.display = "none";
+            john7.style.display = "none";
+            convo.addEventListener("click",()=>{
+                john7.style.display = "block";
+            })
+            localStorage.setItem("contain18", contain18.innerHTML);
+            if(u18.textContent.trim() === UserText[18].trim()){
+                listAppear.addEventListener("click",()=>{
+                    o13.style.display = "block";
+                    o14.style.display = "block";
+                })
+            }
+
+          }) 
+}
   
-        
+    
+
+
+
+
+
+
+
+
+
+
+
+
         }  
    
 
@@ -1505,6 +1899,9 @@ if (o9.textContent.trim() === femaleChooseText[9].trim()){
  let savedUser13 = localStorage.getItem("contain13");
  let savedUser14 = localStorage.getItem("contain14");
  let savedUser15 = localStorage.getItem("contain15");
+ let savedUser16 = localStorage.getItem("contain16");
+ let savedUser17 = localStorage.getItem("contain17");
+ let savedUser18 = localStorage.getItem("contain18");
 
 
 
@@ -1516,6 +1913,12 @@ if (o9.textContent.trim() === femaleChooseText[9].trim()){
  let savedComp5 = localStorage.getItem("john5");
  let savedComp6 = localStorage.getItem("john6");
  let savedComp7 = localStorage.getItem("john7");
+ let savedComp8 = localStorage.getItem("john8");
+ let savedComp9 = localStorage.getItem("john9");
+ let savedComp10 = localStorage.getItem("john10");
+ let savedComp11 = localStorage.getItem("john11");
+ let savedComp12 = localStorage.getItem("john12");
+
 
 let save = localStorage.getItem("nameOfChar");
 
@@ -1718,7 +2121,8 @@ if(savedUser12){
 if(savedUser15){
     contain15.innerHTML = savedUser15;
    o15.remove();
-   o12.style.display = "block"; 
+   o16.textContent = chooseText[16];
+   o16.style.display = "block"; 
    contain0.style.display = "none";
    convo.addEventListener("click",()=>{
      contain0.style.display = "block";
@@ -1727,12 +2131,95 @@ if(savedUser15){
  
 
 
+if(savedUser16){
+    contain16.innerHTML = savedUser16;
+   o16.remove();
+   if(userMaleSaved){
+    c7.textContent = femaleComputerText[7];
+    c8.textContent = femaleComputerText[8];
+    c9.textContent = computerText[9];
+    c10.textContent = computerText[10];
+    c11.textContent = computerText[11];
+    c12.textContent = computerText[12];
+   }
+   if(userFemaleSaved){
+    c7.textContent = femaleComputerText[7];
+    c8.textContent = femaleComputerText[8];
+    c9.textContent = computerText[9];
+    c11.textContent = computerText[10];
+      c11.textContent = computerText[11];
+      c12.textContent = computerText[12];
+       }
+    contain1.style.display= "none";
+    contain2.style.display= "none";
+    contain3.style.display= "none";
+    contain5.style.display = "none";
+    contain7.style.display = "none";
+    contain15.style.display = "none";
+    john2.style.display = "none";
+       convo.addEventListener("click",()=>{
+        contain1.style.display= "block";
+        contain2.style.display = "block";
+        contain3.style.display= "block";
+        contain5.style.display = "block";
+        contain7.style.display= "block";
+        contain15.style.display = "block";
+        john2.style.display = "block";
+       })
+       comp9.style.display = "flex";
+       comp10.style.display = "flex";
+       comp11.style.display = "flex";
+       comp12.style.display = "flex";
+       o13.remove();
+       o14.remove();
+       o17.style.display = "block";
+}
+ 
+
+
+if(savedUser17){
+    contain17.innerHTML = savedUser17;
+   o17.remove();
+  o18.style.display = "block";   
+   contain16.style.display = "none";
+   john6.style.display = "none";
+john0.style.display = "none";
+   convo.addEventListener("click",()=>{
+     contain16.style.display = "block";
+     john6.style.display = "block";
+     john0.style.display = "block";
+   })
+   c13.textContent = computerText[13];
+   comp13.style.display = "flex";
+}
+ 
+
+
+if(savedUser18){
+    contain18.innerHTML = savedUser18;
+     o18.remove();
+            user18.style.display = "flex";
+            messages.style.display = "none";
+            o13.style.display = "block";
+            o14.style.display = "block";
+            john7.style.display = "none";
+            convo.addEventListener("click",()=>{
+                john7.style.display = "block";
+            })
+            
+        o13.style.display = "block";
+        o14.style.display = "block";
+}
+  
+ 
+
+
+
 
 
 //computer local
  if(savedComp0){
-/*     let audio = new Audio("../../../../audio/Mouse_Click_-_Free_Sound_Effect(128k).mp3");   
-    audio.play(); */
+
   o2.style.display = "block";
   o3.style.display = "block";
  }
@@ -1889,7 +2376,111 @@ if (savedComp7){
 }
 
 
+if (savedComp8){
+    john8.innerHTML = savedComp8; 
+    if(userMaleSaved){
+        c9.textContent = computerText[9];
+    }
+
+    if(userFemaleSaved){
+        c9.textContent = femaleComputerText[9];
+    
+    }
+
+
+  
+
+    contain2.style.display = "none";
+    convo.addEventListener("click",()=>{
+    contain2.style.display = "block";
+   
+   })
+
+   
+}
 
 
 
+if (savedComp9){
+    john9.innerHTML = savedComp9; 
+    if(userMaleSaved){
+        c10.textContent = computerText[10];
+    }
 
+    if(userFemaleSaved){
+        c10.textContent = femaleComputerText[10];
+    
+    }
+
+
+  
+    contain5.style.display = "none";
+    convo.addEventListener("click",()=>{
+    contain5.style.display = "block";
+   })
+
+   
+}
+
+if (savedComp10){
+    john10.innerHTML = savedComp10; 
+    if(userMaleSaved){
+        c11.textContent = computerText[11];
+    }
+
+    if(userFemaleSaved){
+        c11.textContent = femaleComputerText[11];
+    
+    }
+
+
+  
+    contain3.style.display = "none";
+    john2.style.display = "none";
+    convo.addEventListener("click",()=>{
+    contain3.style.display = "block";
+    john2.style.display = "block";
+   })
+   
+}
+
+
+if (savedComp11){
+    john11.innerHTML = savedComp11; 
+    if(userMaleSaved){
+        c12.textContent = computerText[12];
+        o17.textContent = chooseText[17];
+    }
+
+    if(userFemaleSaved){
+        c12.textContent = femaleComputerText[12];
+        o17.textContent = chooseText[17];
+    }
+
+   o17.style.display = "block";
+  
+   
+}
+
+
+if (savedComp12){
+    john12.innerHTML = savedComp12; 
+    if(userMaleSaved){
+        c13.textContent = computerText[13];
+
+    }
+
+    if(userFemaleSaved){
+        c12.textContent = femaleComputerText[12];
+  
+    }
+
+    john0.style.display ="none";
+    convo.addEventListener("click",()=>{
+        john0.style.display = "block"
+    })
+    o18.textContent = chooseText[18];
+   o18.style.display = "block";
+  
+   
+}
