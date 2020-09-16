@@ -154,15 +154,17 @@ button{
     border-radius:20px!important;
     padding: 10px;
     color:white;
-    overflow: scroll;
+    overflow: auto;
     height: 80vh!important;
     width: 100%;
+
 }
+
 .Computer-side{
     display: none;
     float: left;
     width: 100%;
-    margin-bottom: 15px;
+    margin-bottom: 20px;
   
 }
 .Computer-side  img {
@@ -174,11 +176,12 @@ button{
 
 }
 .User-side {
-    display: none;
+
+    display:none;
     width: 100%;
     float: right;
     text-align: right;
-    margin-bottom:15px;
+    margin-bottom:20px;
 }
 
 
@@ -189,6 +192,8 @@ button{
      height: 40px;
      margin-left: 10px;
      border-radius:100% ;
+  
+    
 
 }
 
@@ -201,14 +206,14 @@ button{
  
 }
 .text-box-user{
-    display: inline;
-    padding-top:5px;
+    width: 100%;
+    padding-top:3px;
     
 }
-
+/* 
 #u10{
     position: relative;
-    right: 15%;
+    right: 12%;
     top:30%;
     margin-top:10%;
 }
@@ -224,7 +229,7 @@ button{
     height: 50px;
 }
 
-
+ */
 
 .Messages{
     display: none;
@@ -290,4 +295,17 @@ button{
     top: 20%;
     width: 100%;
     height:60%;
+}
+
+.Old-messages{
+    display: none;
+    width: 40%;
+    margin-top: 1px;
+    margin-left:30%;
+    margin-right:30%;
+    padding:1px;
+    border-radius: 40%;
+    font-weight: 200;
+
+
 }
