@@ -19,6 +19,7 @@ const resetBtn = document.getElementById("reset");
 resetBtn.addEventListener("click",()=>{
    const con =  confirm("All your progress will be reset. Are you sure you want to reset?")
        if(con === true){
+    alert("your progress has been reset");
  let UserNameSaved = localStorage.removeItem("userName");
 let userMaleSaved = localStorage.removeItem("userMale");
 let userFemaleSaved = localStorage.removeItem("userFemale");

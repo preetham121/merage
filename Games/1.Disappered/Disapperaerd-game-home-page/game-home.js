@@ -70,7 +70,9 @@ popBTN.addEventListener("click",()=>{
  let savedUser13 = localStorage.getItem("contain13");
  let savedUser14 = localStorage.getItem("contain14");
  let savedUser15 = localStorage.getItem("contain15");
-
+ let savedUser16 = localStorage.getItem("contain16");
+ let savedUser17 = localStorage.getItem("contain17");
+ let savedUser18 = localStorage.getItem("contain18");
 
 
  let savedComp0 = localStorage.getItem("john0");
@@ -81,19 +83,29 @@ popBTN.addEventListener("click",()=>{
  let savedComp5 = localStorage.getItem("john5");
  let savedComp6 = localStorage.getItem("john6");
  let savedComp7 = localStorage.getItem("john7");
+ let savedComp8 = localStorage.getItem("john8");
+ let savedComp9 = localStorage.getItem("john9");
+ let savedComp10 = localStorage.getItem("john10");
+ let savedComp11 = localStorage.getItem("john11");
+ let savedComp12 = localStorage.getItem("john12");
+ let savedComp13 = localStorage.getItem("john13");
+ let savedComp14 = localStorage.getItem("john14");
+ let savedComp15 = localStorage.getItem("john15");
+ let savedComp16 = localStorage.getItem("john16");
 
  const  userMaleSaved = localStorage.getItem("userMale");
  const userFemaleSaved = localStorage.getItem("userFemale");
  
 
- let femaleUserText =  ["Hey!","Do I know you?","Hello John!", `Hello John, My name is ${UserNameSaved}`,"How did you get my number?","Yes!","How do you know me ?",
+  let femaleUserText =  ["Hey!","Do I know you?","Hello John!", `Hello John, My name is ${UserNameSaved}`,"How did you get my number?","Yes!","How do you know me ?",
  "I mean I was","I remember him but…","If you are here for some kind of case","you must know I don’t do detective things anymore.","then...I’m no help to you.",
- "I quit my job.","Sorry, I’m no help to you.","I cannot help you, consult anyone else","I don’t do detective things anymore."];
+ "I quit my job.","Sorry, I’m no help to you.","I cannot help you, consult anyone else","I don’t do detective things anymore.","I quit my job.",
+ " So he gave you my number. ","Look I cant do this…"];
  
  let UserText = ["Hey!","Do I know you?","Hello John!", `Hello John, My name is ${UserNameSaved}`,"How did you get my number?","Yes!","How do you know me ?",
  "I mean I was", "I remember him but…","If you are here for some kind of case","you must know I don’t do detective things anymore.","then...I’m no help to you.",
- "I quit my job." ,"Sorry, I’m no help to you.","I cannot help you, consult anyone else","I don’t do detective things anymore."];
-
+ "I quit my job." ,"Sorry, I’m no help to you.","I cannot help you, consult anyone else","I don’t do detective things anymore.","I quit my job.",
+ " So he gave you my number. ","Look I cant do this…"]; 
 //user local 
 
   if (savedUser0){
@@ -423,7 +435,95 @@ if (savedComp7){
 }
 
 
+if (savedComp12){
+  let  NumberDisplay = document.getElementById("NumberDisplay");
+    let  textnumber  = document.querySelector(".text-number ");
+       NumberDisplay.textContent = "You have a text from John ";
+      textnumber.style.display = "block";
+}
 
+
+
+if(savedUser18){
+  let  NumberDisplay = document.getElementById("NumberDisplay");
+  let  textnumber  = document.querySelector(".text-number ");
+   if (userMaleSaved){
+             NumberDisplay.textContent = UserText[18];
+
+   }
+   if(userFemaleSaved) {
+     NumberDisplay.textContent = femaleUserText[18];
+   }
+
+    textnumber.style.display = "none";
+
+}
+
+
+
+if(savedUser13){
+  let  NumberDisplay = document.getElementById("NumberDisplay");
+  let  textnumber  = document.querySelector(".text-number ");
+   if (userMaleSaved){
+             NumberDisplay.textContent = UserText[13];
+
+   }
+   if(userFemaleSaved) {
+     NumberDisplay.textContent = femaleUserText[13];
+   }
+
+    textnumber.style.display = "none";
+
+}
+
+
+if(savedUser14){
+  let  NumberDisplay = document.getElementById("NumberDisplay");
+  let  textnumber  = document.querySelector(".text-number ");
+   if (userMaleSaved){
+             NumberDisplay.textContent = UserText[14];
+
+   }
+   if(userFemaleSaved) {
+     NumberDisplay.textContent = femaleUserText[14];
+   }
+
+    textnumber.style.display = "none";
+
+}
+
+
+
+if (savedComp13){
+  let  NumberDisplay = document.getElementById("NumberDisplay");
+    let  textnumber  = document.querySelector(".text-number ");
+       NumberDisplay.textContent = "You have a text from John ";
+      textnumber.style.display = "block";
+}
+
+
+if (savedComp14){
+  let  NumberDisplay = document.getElementById("NumberDisplay");
+    let  textnumber  = document.querySelector(".text-number ");
+       NumberDisplay.textContent = "You have a text from John ";
+      textnumber.style.display = "block";
+}
+
+
+if (savedComp15){
+  let  NumberDisplay = document.getElementById("NumberDisplay");
+    let  textnumber  = document.querySelector(".text-number ");
+       NumberDisplay.textContent = "You have a text from John ";
+      textnumber.style.display = "block";
+}
+
+
+if (savedComp16){
+  let  NumberDisplay = document.getElementById("NumberDisplay");
+    let  textnumber  = document.querySelector(".text-number ");
+       NumberDisplay.textContent = "You have a text from John ";
+      textnumber.style.display = "block";
+}
 
 
 

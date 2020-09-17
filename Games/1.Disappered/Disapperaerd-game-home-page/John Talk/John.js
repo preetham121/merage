@@ -39,12 +39,14 @@ let userFemaleSaved = localStorage.getItem("userFemale");
 let femaleComputerText = ["Hey!","My name is John. I’m from Rosewood.", `Are you detective ${UserNameSaved} ?`,"What do you mean by “I was” ?","My friend William gave me your number.",
 "He told me that you are a detective and you are best in your work.","He told that you helped him to find the culprit behind his father’s murder within a day.",
 "Please don’t tell me that ..","  I want your help detective."," Please help me. ","My friend William told me that you are best in your work.",
-" He told that you helped him to find the culprit behind his father’s murder within a day.","He gave me your phone number so that I can contact you.","Yes!"];
+" He told that you helped him to find the culprit behind his father’s murder within a day.","He gave me your phone number so that I can contact you.","Yes!",
+"Don’t say that please.."," You are my only hope.","It’s my sister. She is gone missing for about a week.","I beg you please help me."];
 
 let computerText = ["Hey!","My name is John. I’m from Rosewood.", `Are you detective ${UserNameSaved} ?`,"What do you mean by “I was” ?","My friend William gave me your number.",
 "He told me that you are a detective and you are best in your work.", "He told that you helped him to find the culprit behind his father’s murder within a day.",
 "Please don’t tell me that ..","  I want your help detective."," Please help me. ","My friend William told me that you are best in your work.",
-"  He told that you helped him to find the culprit behind his father’s murder within a day.","He gave me your phone number so that I can contact you.","Yes!"];
+"  He told that you helped him to find the culprit behind his father’s murder within a day.","He gave me your phone number so that I can contact you.","Yes!",
+"Don’t say that please.."," You are my only hope.","It’s my sister. She is gone missing for about a week.","I beg you please help me."];
 
 let femaleUserText =  ["Hey!","Do I know you?","Hello John!", `Hello John, My name is ${UserNameSaved}`,"How did you get my number?","Yes!","How do you know me ?",
 "I mean I was","I remember him but…","If you are here for some kind of case","you must know I don’t do detective things anymore.","then...I’m no help to you.",
@@ -58,12 +60,12 @@ let UserText = ["Hey!","Do I know you?","Hello John!", `Hello John, My name is $
 
 let chooseText = ["Hey!","Do I know you?","Hello John!" ,`Hello John, My name is ${UserNameSaved}`,"How did you get my number ?","Yes!","How do you know me ?",
 "I mean I was", "I remember him but…","If you are here for some kind of case","you must know I don’t do detective things anymore.","then...I’m no help to you.",
-"I quit my job.","Sorry, I’m no help to you.","I cannot help you, consult anyone else","I don’t do detective things anymore.","I quit my job.",
+"I quit my job.","Sorry, I’m no help to you.","I cannot help you, consult anyone else.","I don’t do detective things anymore.","I quit my job.",
 " So he gave you my number.","Look I cant do this…"];
 
 let femaleChooseText = ["Hey!","Do I know you?","Hello John!" ,`Hello John, My name is ${UserNameSaved}`,"How did you get my number ?","Yes!","How do you know me ?",
 "I mean I was", "I remember him but…" ,"If you are here for some kind of case","you must know I don’t do detective things anymore.","then...I’m no help to you.",
-"I quit my job.","Sorry, I’m no help to you.","I cannot help you, consult anyone else","I don’t do detective things anymore.","I quit my job.",
+"I quit my job.","Sorry, I’m no help to you.","I cannot help you, consult anyone else.","I don’t do detective things anymore.","I quit my job.",
 ' So he gave you my number.',"Look I cant do this…"];
 
 
@@ -87,6 +89,10 @@ const  c10 =  document.getElementById("c10");
 const  c11 =  document.getElementById("c11");
 const  c12 =  document.getElementById("c12"); 
 const  c13 =  document.getElementById("c13"); 
+const  c14 =  document.getElementById("c14"); 
+const  c15 =  document.getElementById("c15"); 
+const  c16 =  document.getElementById("c16");
+const  c17 =  document.getElementById("c17");
 
 const comp0 = document.getElementById("comp0");
 const comp1 = document.getElementById("comp1");
@@ -102,6 +108,10 @@ const comp10 = document.getElementById("comp10");
 const comp11 = document.getElementById("comp11");
 const comp12 = document.getElementById("comp12");
 const comp13 = document.getElementById("comp13");
+const comp14 = document.getElementById("comp14");
+const comp15 = document.getElementById("comp15");
+const comp16 = document.getElementById("comp16");
+const comp17 = document.getElementById("comp17");
 
 const john0 = document.getElementById("john0");
 const john1 = document.getElementById("john1");
@@ -116,6 +126,10 @@ const john9 = document.getElementById("john9");
 const john10 = document.getElementById("john10");
 const john11 = document.getElementById("john11");
 const john12 = document.getElementById("john12");
+const john13 = document.getElementById("john13");
+const john14 = document.getElementById("john14");
+const john15 = document.getElementById("john15");
+const john16 = document.getElementById("john16");
 
 const o0=document.getElementById("o0");
 const o1 = document.getElementById("o1");
@@ -137,6 +151,8 @@ const o15= document.getElementById("o15");
 const o16= document.getElementById("o16");
 const o17= document.getElementById("o17");
 const o18= document.getElementById("o18");
+const o19= document.getElementById("o19");
+const o20= document.getElementById("o20");
 
 const u0 = document.getElementById("u0");
 const u1 = document.getElementById("u1");
@@ -157,6 +173,8 @@ const u15 = document.getElementById("u15");
 const u16 = document.getElementById("u16");
 const u17 = document.getElementById("u17");
 const u18 = document.getElementById("u18");
+const u19= document.getElementById("u19");
+const u20= document.getElementById("u20");
 
 const contain0 = document.getElementById("contain0");
 const contain1 = document.getElementById("contain1");
@@ -177,6 +195,8 @@ const contain15 = document.getElementById("contain15");
 const contain16 = document.getElementById("contain16");
 const contain17 = document.getElementById("contain17");
 const contain18 = document.getElementById("contain18");
+const contain19= document.getElementById("contain19");
+const contain20= document.getElementById("contain20");
 
 
 const user0 = document.getElementById("user0");
@@ -198,6 +218,8 @@ const user15 = document.getElementById("user15");
 const user16 = document.getElementById("user16");
 const user17 = document.getElementById("user17");
 const user18 = document.getElementById("user18");
+const user19= document.getElementById("user19");
+const user20= document.getElementById("user20");
 
 
 const i0 = document.getElementById("i0");
@@ -212,6 +234,13 @@ const i9 = document.getElementById("i9");
 const i10 = document.getElementById("i10");
 const i11 = document.getElementById("i11");
 const i12 = document.getElementById("i12");
+const i13 = document.getElementById("i13");
+const i14 = document.getElementById("i14");
+const i15 = document.getElementById("i15");
+const i16 = document.getElementById("i16");
+
+
+
 
 
 
@@ -1047,8 +1076,10 @@ if(o18.textContent.trim() === chooseText[18].trim()){
               o18.remove();
             user18.style.display = "flex";
             messages.style.display = "none";
+            john6.style.display = "none";
             john7.style.display = "none";
             convo.addEventListener("click",()=>{
+                john6.style.display = "block";
                 john7.style.display = "block";
             })
             localStorage.setItem("contain18", contain18.innerHTML);
@@ -1061,6 +1092,178 @@ if(o18.textContent.trim() === chooseText[18].trim()){
 
           }) 
 }
+
+
+
+
+if(o13.textContent.trim() === chooseText[13].trim()){
+          u13.textContent = UserText[13];
+          let image = document.createElement("img");
+          image.setAttribute("src","./../../../../pics/john1.jpg");
+          image.setAttribute("width","100%");
+          image.setAttribute("height","100%");
+          user13.appendChild(image);
+          o13.addEventListener("click",()=>{
+                o13.remove();
+                o14.remove();
+                o17.remove();
+                o18.remove();
+                user13.style.display = "flex";
+                messages.style.display = "none";
+                localStorage.setItem("contain13",contain13.innerHTML);
+                  john8.style.display = "none";
+                  john5.style.display = "none";
+                  convo.addEventListener("click",()=>{
+                      john8.style.display = "block";
+                      john5.style.display = "block";
+                  })
+                  if(u13.textContent.trim() ===  UserText[13].trim()){
+                       john9.style.display = "none";
+                       contain8.style.display = "none"  ;
+                       convo.addEventListener("click",()=>{
+                           john9.style.display = "block";
+                           contain8.style.display = "block";
+                       })
+                       i13.style.display = "flex";
+                    c14.textContent = computerText[14];
+                    c15.textContent = computerText[15];
+                    c16.textContent = computerText[16];
+                    c17.textContent = computerText[17];
+                    setTimeout(()=>{
+                     i13.remove();
+                 comp14.style.display = "flex";
+                 localStorage.setItem("john13",john13.innerHTML);
+             setTimeout(()=>{i14.style.display = "flex";  john10.style.display = "none"  ;  contain9.style.display = "none" ;},1000) 
+
+                    },1000)
+
+
+                    setTimeout(()=>{
+                        convo.addEventListener("click",()=>{john10.style.display = "block";  contain9.style.display = "block";})
+
+                        i14.remove();
+                        comp15.style.display = "flex";
+                        localStorage.setItem("john14",john14.innerHTML);
+                        setTimeout(()=>{i15.style.display = "flex";  },1000);
+
+                  },4000)
+
+
+                  setTimeout(()=>{
+         
+                    i15.remove();
+                    comp16.style.display = "flex";
+                    localStorage.setItem("john15",john15.innerHTML);
+                    setTimeout(()=>{i16.style.display = "flex"; john11.style.display = "none" ;    contain6.style.display = "none"; contain11.style.display = "none";  contain10.style.display = "none"},1000);
+              },8000)
+
+            
+              setTimeout(()=>{
+                convo.addEventListener("click",()=>{john11.style.display = "block";    contain6.style.display = "block"; contain11.style.display = "block";  contain10.style.display = "block"})
+                i16.remove();
+                comp17.style.display = "flex";
+                localStorage.setItem("john16",john16.innerHTML);
+                o19.style.display = "block";
+                o20.style.display = "block";
+          },10000)
+              
+
+
+
+                  
+            }           
+
+          })
+}
+
+
+
+
+if(o14.textContent.trim() === chooseText[14].trim()){
+    u14.textContent = UserText[14];
+    let image = document.createElement("img");
+    image.setAttribute("src","./../../../../pics/john1.jpg");
+    image.setAttribute("width","100%");
+    image.setAttribute("height","100%");
+    user14.appendChild(image);
+    o14.addEventListener("click",()=>{
+          o13.remove();
+          o14.remove();
+          o17.remove();
+          o18.remove();
+          user14.style.display = "flex";
+          messages.style.display = "none";
+          localStorage.setItem("contain14",contain14.innerHTML);
+            john8.style.display = "none";
+            john5.style.display = "none";
+            convo.addEventListener("click",()=>{
+                john8.style.display = "block";
+                john5.style.display = "block";
+            })
+            if(u14.textContent.trim() ===  UserText[14].trim()){
+                john9.style.display = "none";
+                contain8.style.display = "none"  ;
+                convo.addEventListener("click",()=>{
+                    john9.style.display = "block";
+                    contain8.style.display = "block";
+                })
+                 i13.style.display = "flex";
+              c14.textContent = computerText[14];
+              c15.textContent = computerText[15];
+              c16.textContent = computerText[16];
+              c17.textContent = computerText[17];
+              setTimeout(()=>{
+               i13.remove();
+           comp14.style.display = "flex";
+           localStorage.setItem("john13",john13.innerHTML);
+       setTimeout(()=>{i14.style.display = "flex";   john10.style.display = "none"  ;  contain9.style.display = "none" ;},1000) 
+
+              },1000)
+
+
+              setTimeout(()=>{
+                  convo.addEventListener("click",()=>{john10.style.display = "block";  contain9.style.display = "block";})
+                  i14.remove();
+                  comp15.style.display = "flex";
+                  localStorage.setItem("john14",john14.innerHTML);
+                  setTimeout(()=>{i15.style.display = "flex";  },1000);
+
+            },4000)
+
+
+            setTimeout(()=>{
+   
+              i15.remove();
+              comp16.style.display = "flex";
+              localStorage.setItem("john15",john15.innerHTML);
+              setTimeout(()=>{i16.style.display = "flex";john11.style.display = "none" ;    contain6.style.display = "none";  contain11.style.display = "none";   contain10.style.display = "none"},1000);
+        },8000)
+
+      
+        setTimeout(()=>{
+          convo.addEventListener("click",()=>{john11.style.display = "block";    contain6.style.display = "block";  contain11.style.display = "block";   contain10.style.display = "block"})
+          i16.remove();
+          comp17.style.display = "flex";
+          localStorage.setItem("john16",john16.innerHTML);
+          o19.style.display = "block";
+          o20.style.display = "block";
+    },10000)
+        
+
+
+
+            
+      }           
+
+    })
+}
+
+
+
+
+
+
+
 
 
 
@@ -1824,13 +2027,18 @@ if(o17.textContent.trim() === chooseText[17].trim()){
               o18.remove();
             user18.style.display = "flex";
             messages.style.display = "none";
+             
+            john6.style.display = "none";
             john7.style.display = "none";
             convo.addEventListener("click",()=>{
+                john6.style.display = "block";
                 john7.style.display = "block";
             })
             localStorage.setItem("contain18", contain18.innerHTML);
             if(u18.textContent.trim() === UserText[18].trim()){
                 listAppear.addEventListener("click",()=>{
+                    messages.style.display = "block";
+                    o18.remove();
                     o13.style.display = "block";
                     o14.style.display = "block";
                 })
@@ -1840,6 +2048,171 @@ if(o17.textContent.trim() === chooseText[17].trim()){
 }
   
     
+
+
+
+if(o13.textContent.trim() === chooseText[13].trim()){
+    u13.textContent = UserText[13];
+    let image = document.createElement("img");
+    image.setAttribute("src","./../../../../pics/femlae.jpg");
+    image.setAttribute("width","100%");
+    image.setAttribute("height","100%");
+    user13.appendChild(image);
+    o13.addEventListener("click",()=>{
+          o13.remove();
+          o14.remove();
+          o17.remove();
+          o18.remove();
+          user13.style.display = "flex";
+          messages.style.display = "none";
+          localStorage.setItem("contain13",contain13.innerHTML);
+            john8.style.display = "none";
+            john5.style.display = "none";
+            convo.addEventListener("click",()=>{
+                john8.style.display = "block";
+                john5.style.display = "block";
+            })
+            if(u13.textContent.trim() ===  UserText[13].trim()){
+                john9.style.display = "none";
+                contain8.style.display = "none"  ;
+                convo.addEventListener("click",()=>{
+                    john9.style.display = "block";
+                    contain8.style.display = "block";
+                })
+                 i13.style.display = "flex";
+              c14.textContent = computerText[14];
+              c15.textContent = computerText[15];
+              c16.textContent = computerText[16];
+              c17.textContent = computerText[17];
+              setTimeout(()=>{
+               i13.remove();
+           comp14.style.display = "flex";
+           localStorage.setItem("john13",john13.innerHTML);
+       setTimeout(()=>{i14.style.display = "flex";  john10.style.display = "none"  ;  contain9.style.display = "none" ;},1000) 
+
+              },1000)
+
+
+              setTimeout(()=>{
+                  convo.addEventListener("click",()=>{john10.style.display = "block";  contain9.style.display = "block";})
+                  i14.remove();
+                  comp15.style.display = "flex";
+                  localStorage.setItem("john14",john14.innerHTML);
+                  setTimeout(()=>{i15.style.display = "flex";  },1000);
+
+            },4000)
+
+
+            setTimeout(()=>{
+   
+              i15.remove();
+              comp16.style.display = "flex";
+              localStorage.setItem("john15",john15.innerHTML);
+              setTimeout(()=>{i16.style.display = "flex";john11.style.display = "none" ;    contain6.style.display = "none"; contain11.style.display = "none"; contain10.style.display = "none"},1000);
+        },8000)
+
+      
+        setTimeout(()=>{
+          convo.addEventListener("click",()=>{john11.style.display = "block";    contain6.style.display = "block"; contain11.style.display = "block";  contain10.style.display = "block"})
+          i16.remove();
+          comp17.style.display = "flex";
+          localStorage.setItem("john16",john16.innerHTML);
+          o19.style.display = "block";
+          o20.style.display = "block";
+    },10000)
+        
+
+
+
+            
+      }           
+
+    })
+}
+
+
+
+
+if(o14.textContent.trim() === chooseText[14].trim()){
+u14.textContent = UserText[14];
+let image = document.createElement("img");
+image.setAttribute("src","./../../../../pics/femlae.jpg");
+image.setAttribute("width","100%");
+image.setAttribute("height","100%");
+user14.appendChild(image);
+o14.addEventListener("click",()=>{
+    o13.remove();
+    o14.remove();
+    o17.remove();
+    o18.remove();
+    user14.style.display = "flex";
+    messages.style.display = "none";
+    localStorage.setItem("contain14",contain14.innerHTML);
+      john8.style.display = "none";
+      john5.style.display = "none";
+      convo.addEventListener("click",()=>{
+          john8.style.display = "block";
+          john5.style.display = "block";
+              })
+      if(u14.textContent.trim() ===  UserText[14].trim()){
+        john9.style.display = "none";
+        contain8.style.display = "none"  ;
+        convo.addEventListener("click",()=>{
+            john9.style.display = "block";
+            contain8.style.display = "block";
+        })
+           i13.style.display = "flex";
+        c14.textContent = computerText[14];
+        c15.textContent = computerText[15];
+        c16.textContent = computerText[16];
+        c17.textContent = computerText[17];
+        setTimeout(()=>{
+         i13.remove();
+     comp14.style.display = "flex";
+     localStorage.setItem("john13",john13.innerHTML);
+ setTimeout(()=>{i14.style.display = "flex";  john10.style.display = "none"  ;  contain9.style.display = "none" ;},1000); 
+
+        },1000)
+
+
+        setTimeout(()=>{
+            convo.addEventListener("click",()=>{john10.style.display = "block";  contain9.style.display = "block";})
+            i14.remove();
+            comp15.style.display = "flex";
+            localStorage.setItem("john14",john14.innerHTML);
+            setTimeout(()=>{i15.style.display = "flex";  },1000);
+
+      },4000)
+
+
+      setTimeout(()=>{
+
+        i15.remove();
+        comp16.style.display = "flex";
+        localStorage.setItem("john15",john15.innerHTML);
+        setTimeout(()=>{i16.style.display = "flex";john11.style.display = "none" ;    contain6.style.display = "none"; contain11.style.display = "none";   contain10.style.display = "none"},1000);
+  },8000)
+
+
+  setTimeout(()=>{
+    convo.addEventListener("click",()=>{john11.style.display = "block";    contain6.style.display = "block"; contain11.style.display = "block";  contain10.style.display = "block"})
+    i16.remove();
+    comp17.style.display = "flex";
+    localStorage.setItem("john16",john16.innerHTML);
+    o19.style.display = "block";
+    o20.style.display = "block";
+},10000)
+  
+
+
+
+      
+}           
+
+})
+}
+
+
 
 
 
@@ -1918,6 +2291,10 @@ if(o17.textContent.trim() === chooseText[17].trim()){
  let savedComp10 = localStorage.getItem("john10");
  let savedComp11 = localStorage.getItem("john11");
  let savedComp12 = localStorage.getItem("john12");
+ let savedComp13 = localStorage.getItem("john13");
+ let savedComp14 = localStorage.getItem("john14");
+ let savedComp15 = localStorage.getItem("john15");
+ let savedComp16 = localStorage.getItem("john16");
 
 
 let save = localStorage.getItem("nameOfChar");
@@ -2146,7 +2523,7 @@ if(savedUser16){
     c7.textContent = femaleComputerText[7];
     c8.textContent = femaleComputerText[8];
     c9.textContent = computerText[9];
-    c11.textContent = computerText[10];
+    c10.textContent = computerText[10];
       c11.textContent = computerText[11];
       c12.textContent = computerText[12];
        }
@@ -2170,8 +2547,8 @@ if(savedUser16){
        comp10.style.display = "flex";
        comp11.style.display = "flex";
        comp12.style.display = "flex";
-       o13.remove();
-       o14.remove();
+       o13.style.display = "none";
+       o14.style.display = "none";
        o17.style.display = "block";
 }
  
@@ -2198,19 +2575,108 @@ john0.style.display = "none";
 if(savedUser18){
     contain18.innerHTML = savedUser18;
      o18.remove();
+     o13.textContent = chooseText[13];
+     o14.textContent = chooseText[14];
             user18.style.display = "flex";
-            messages.style.display = "none";
             o13.style.display = "block";
             o14.style.display = "block";
+            john6.style.display = "none";
             john7.style.display = "none";
             convo.addEventListener("click",()=>{
+                john6.style.display = "block";
                 john7.style.display = "block";
             })
-            
-        o13.style.display = "block";
-        o14.style.display = "block";
 }
-  
+
+
+
+
+
+if(savedUser13){
+    contain13.innerHTML = savedUser13;
+     o13.remove();
+     o14.remove();
+     o17.remove();
+     o18.remove();
+  user13.style.display = "flex";
+  john8.style.display = "none";
+     john5.style.display = "none";
+     john9.style.display = "none";
+     john10.style.display = "none";
+     john11.style.display = "none"
+     contain8.style.display = "none";
+     contain9.style.display = "none";
+     contain10.style.display = "none";
+     contain11.style.display = "none"; 
+     contain6.style.display = "none";
+         convo.addEventListener("click",()=>{
+            john5.style.display = "block";
+            john8.style.display = "block";
+            john9.style.display = "block";
+            john10.style.display = "block";
+            john11.style.display = "block";
+        contain8.style.display = "block";
+        contain10.style.display = "block";
+        contain11.style.display = "block"; 
+        contain6.style.display = "block";
+            })
+            c14.textContent = computerText[14];
+   comp14.style.display = "flex";
+   c15.textContent = computerText[15];
+   comp15.style.display = "flex";
+   c16.textContent = computerText[16];
+   comp16.style.display = "flex";
+   c17.textContent = computerText[17];
+   comp17.style.display = "flex";
+
+}
+
+
+if(savedUser14){
+    contain14.innerHTML = savedUser14;
+     o13.remove();
+     o14.remove();
+     o17.remove();
+     o18.remove();
+  user14.style.display = "flex";
+  john8.style.display = "none";
+  john5.style.display = "none";
+  john9.style.display = "none";
+  john10.style.display = "none";
+  john11.style.display = "none"
+  contain8.style.display = "none";
+  contain9.style.display = "none";
+  contain10.style.display = "none";
+  contain11.style.display = "none"; 
+  contain6.style.display = "none";
+      convo.addEventListener("click",()=>{
+         john5.style.display = "block";
+         john8.style.display = "block";
+         john9.style.display = "block";
+         john10.style.display = "block";
+         john11.style.display = "block";
+     contain8.style.display = "block";
+     contain10.style.display = "block";
+     contain11.style.display = "block"; 
+     contain6.style.display = "block";
+         })
+            c14.textContent = computerText[14];
+   comp14.style.display = "flex";
+   c15.textContent = computerText[15];
+   comp15.style.display = "flex";
+   c16.textContent = computerText[16];
+   comp16.style.display = "flex";
+   c17.textContent = computerText[17];
+   comp17.style.display = "flex";
+
+}
+
+
+
+
+
+
+
  
 
 
@@ -2483,4 +2949,35 @@ if (savedComp12){
    o18.style.display = "block";
   
    
+}
+
+
+
+if (savedComp13){
+
+    john13.innerHTML = savedComp13; 
+
+}
+
+
+
+if (savedComp14){
+
+    john14.innerHTML = savedComp14; 
+
+}
+
+
+if (savedComp15){
+
+    john15.innerHTML = savedComp15; 
+
+}
+
+
+if (savedComp16){
+
+    john16.innerHTML = savedComp16; 
+   o19.style.display = "block";
+    o20.style.display="block";
 }
